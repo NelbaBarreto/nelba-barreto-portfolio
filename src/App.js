@@ -1,5 +1,7 @@
 import foto from "./img/foto.jpg";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const App = () => {
   return (
@@ -15,7 +17,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Linkedin
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </header>
     </div>
