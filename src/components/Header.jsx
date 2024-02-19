@@ -1,7 +1,5 @@
 import React from "react";
 import foto from "../img/foto.jpg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Description = () => {
   return (
@@ -10,18 +8,11 @@ const Description = () => {
         Hello! I'm <span className="text-retro-150">Nelba</span> &#127752;
       </h1>
       <section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        As a technical consultant at EXCELSIS, I develop and optimize ETL scripts for data warehouses, utilizing advanced Oracle SQL and PL/SQL. I have successfully enhanced the performance and quality of data extraction, transformation, and loading processes, along with integrating with other sources of information.
+        Previously, I worked as an Oracle developer at RAMA and as a web developer at Dotech Software. In these roles, I contributed to projects involving modification, maintenance, and creation of information systems, reports, and forms, with a focus on financial regulations compliance and customer service optimization. Technologies used included React.js, Slack, git, and SVN.
+        I am currently learning Python, with a particular interest in the field of Data Science, as I believe it holds significant potential and applications in today's world.
+        I describe myself as a responsible, curious, and flexible professional, dedicated to continuous learning as a means to enhance and expand my skills, both professionally and personally. My advanced level of English enables effective communication in international professional environments.
       </section>
-      <div>
-        <a
-          className="underline hover:text-blue-800 text-3xl"
-          href="https://www.linkedin.com/in/nelba-barreto/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-      </div>
     </div>
   )
 }
