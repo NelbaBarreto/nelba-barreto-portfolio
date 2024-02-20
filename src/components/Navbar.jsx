@@ -21,7 +21,7 @@ const Navbar = () => {
           href="#about-me"
           onClick={() => setSection(1)}
         >
-          About me
+          About Me
         </a>
         <a
           className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === 2 })}
