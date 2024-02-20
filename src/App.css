@@ -35,3 +35,8 @@
     transform: rotate(360deg);
   }
 }
+
+a.navbar-item:hover {
+  background-color: #FF8911;
+  color: white;
+}
