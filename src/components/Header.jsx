@@ -3,7 +3,7 @@ import foto from "../img/foto.jpg"
 
 const Description = () => {
   return (
-    <div className="text-white" id="home">
+    <div className="text-white">
       <h1 className="title is-1 text-white font-bold">
         Hello! I'm <span className="text-retro-150">Nelba</span> &#127752;
       </h1>
@@ -16,7 +16,7 @@ const Description = () => {
 
 const Header = () => {
   return (
-    <header className="container pt-5">
+    <header className="container pt-5" id="home">
       <div className="columns">
         <div className="column is-one-quarter">
           <img src={foto} className="h-60 rounded-full" alt="foto nelba barreto" />
