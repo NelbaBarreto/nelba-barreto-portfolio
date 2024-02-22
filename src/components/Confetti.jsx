@@ -16,17 +16,23 @@ const Description = () => {
     <div className="text-white">
       <h1 className="sm:text-5xl text-4xl text-white font-bold my-2 lg:mb-4 lg:my-0">
         Hello! I'm&nbsp;
-        <button 
+        <button
           className="text-retro-150"
           onClick={onOnce}
         >
-        Nelba
-        </button> 
+          Nelba
+        </button>
         &#127752;
       </h1>
       <Realistic onInit={onInit} />
       <section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Developer with +4 years of experience overall. Currently, I develop and optimize ETL scripts for data warehouses,
+        utilizing advanced Oracle SQL and PL/SQL. I have successfully enhanced the performance and quality of data
+        extraction, transformation, and loading processes. Previously, I worked as an Oracle developer and as a web
+        developer. In these roles, I contributed to projects involving modification, maintenance, and creation of information
+        systems, reports, and forms, with a focus on financial regulations compliance and customer service optimization. I
+        describe myself as a responsible, curious, and flexible professional, dedicated to continuous learning as a means to
+        enhance and expand my skills, both professionally and personally.
       </section>
     </div>
   )
