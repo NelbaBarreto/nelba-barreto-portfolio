@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faBurger } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames"
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const { section, setSection } = useContext(SectionContext);
@@ -79,11 +80,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden lg:min-h-14">
-        <button className="my-auto min-h-14">
-          <FontAwesomeIcon className="text-3xl text-background-50 mx-2" icon={faBurger} />
-        </button>
-      </div>
+      <Sidebar />
     </nav >
   )
 }
