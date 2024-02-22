@@ -14,7 +14,7 @@ const Description = () => {
 
   return (
     <div className="text-white">
-      <h1 className="title sm:is-3 is-1 text-white font-bold">
+      <h1 className="text-3xl text-white font-bold my-2 lg:mb-2 lg:my-0">
         Hello! I'm&nbsp;
         <button 
           className="text-retro-150"

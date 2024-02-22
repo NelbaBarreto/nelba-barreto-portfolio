@@ -13,7 +13,7 @@ const App = () => {
   return (
     <SectionContext.Provider value={{ section, setSection }}>
       <div className="bg-background-50 min-h-screen">
-        <Navbar />
+        {/* <Navbar /> */}
         <Descripcion />
         <AboutMe />
         <Projects />
