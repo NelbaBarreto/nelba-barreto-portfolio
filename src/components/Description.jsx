@@ -26,7 +26,7 @@ const Description = () => {
       </h1>
       <Realistic onInit={onInit} />
       <section>
-        Developer with +4 years of experience overall. Currently, I develop and optimize ETL scripts for data warehouses,
+        I'm a developer with +4 years of experience overall. Currently, I develop and optimize ETL scripts for data warehouses,
         utilizing advanced Oracle SQL and PL/SQL. I have successfully enhanced the performance and quality of data
         extraction, transformation, and loading processes. Previously, I worked as an Oracle developer and as a web
         developer. In these roles, I contributed to projects involving modification, maintenance, and creation of information
