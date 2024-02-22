@@ -79,7 +79,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden min-h-14">
+      <div className="lg:hidden lg:min-h-14">
         <button className="my-auto min-h-14">
           <FontAwesomeIcon className="text-3xl text-background-50 mx-2" icon={faBurger} />
         </button>
