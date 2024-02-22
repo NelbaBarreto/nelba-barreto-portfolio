@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Contact = () => {
   return (
-    <section className="container" id="contact">
+    <section id="contact">
       <Title>Contact</Title>
     </section>
   )

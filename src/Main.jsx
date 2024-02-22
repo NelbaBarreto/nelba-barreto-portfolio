@@ -14,10 +14,14 @@ const App = () => {
     <SectionContext.Provider value={{ section, setSection }}>
       <div className="bg-background-50 min-h-screen">
         <Navbar />
-        <Descripcion />
-        <AboutMe />
-        <Projects />
-        <Contact />
+        <div className="container">
+          <div className="lg:m-0 mx-4">
+            <Descripcion />
+            <AboutMe />
+            <Projects />
+            <Contact />
+          </div>
+        </div>
       </div>
     </SectionContext.Provider>
   );

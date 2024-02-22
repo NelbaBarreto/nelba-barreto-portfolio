@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const AboutMe = () => {
   return (
-    <section className="container" id="about-me">
+    <section id="about-me">
       <Title>About Me</Title>
     </section>
   )
