@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import classNames from "classnames";
+import { faEnvelope, faBurger } from "@fortawesome/free-solid-svg-icons";
+import classNames from "classnames"
 
 const Navbar = () => {
   const { section, setSection } = useContext(SectionContext);
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar bg-retro-150 border-b-retro-100 border-b-4">
-      <div className="navbar-menu">
+      <div className="navbar-menu hidden">
         <div className="navbar-start">
           <a
             className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === 0 })}
@@ -74,12 +74,17 @@ const Navbar = () => {
                 >
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
-              </button>              
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+      <div className="lg:hidden lg:min-h-14">
+        <button className="my-auto min-h-14">
+          <FontAwesomeIcon className="text-3xl text-background-50 mx-2" icon={faBurger} />
+        </button>
+      </div>
+    </nav >
   )
 }
 

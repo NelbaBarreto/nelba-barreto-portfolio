@@ -4,12 +4,12 @@ import Confetti from "./Confetti";
 
 const Header = () => {
   return (
-    <header className="container pt-5" id="home">
-      <div className="columns">
-        <div className="column is-one-quarter mb-10">
+    <header className="container py-10" id="home">
+      <div className="grid grid-cols-1 lg:grid-cols-4">
+        <div className="mx-auto my-auto">
           <img src={foto} className="h-60 rounded-full" alt="foto nelba barreto" />
         </div>
-        <div className="column">
+        <div className="lg:col-span-3 lg:m-0 m-4">
           <Confetti />
         </div>
       </div>
