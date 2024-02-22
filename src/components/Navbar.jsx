@@ -2,8 +2,10 @@ import React, { useContext } from "react";
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faBurger } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames"
+import Sidebar from "./Sidebar";
+import { options } from "./utils";
 
 const Navbar = () => {
   const { section, setSection } = useContext(SectionContext);
@@ -13,34 +15,18 @@ const Navbar = () => {
     <nav className="navbar bg-retro-150 border-b-retro-100 border-b-4">
       <div className="navbar-menu hidden">
         <div className="navbar-start">
-          <a
-            className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === 0 })}
-            href="#home"
-            onClick={() => setSection(0)}
-          >
-            Home
-          </a>
-          <a
-            className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === 1 })}
-            href="#about-me"
-            onClick={() => setSection(1)}
-          >
-            About Me
-          </a>
-          <a
-            className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === 2 })}
-            href="#projects"
-            onClick={() => setSection(2)}
-          >
-            Projects
-          </a>
-          <a
-            className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === 3 })}
-            href="#contact"
-            onClick={() => setSection(3)}
-          >
-            Contact
-          </a>
+          {options.map((option, index) => {
+            return (
+              <a
+                key={index}
+                className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === option.id })}
+                href={option.href}
+                onClick={() => setSection(option.id)}
+              >
+                {option.label}
+              </a>
+            )
+          })}
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
@@ -79,11 +65,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden lg:min-h-14">
-        <button className="my-auto min-h-14">
-          <FontAwesomeIcon className="text-3xl text-background-50 mx-2" icon={faBurger} />
-        </button>
-      </div>
+      <Sidebar />
     </nav >
   )
 }
