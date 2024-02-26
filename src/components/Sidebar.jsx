@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import classNames from "classnames"
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,10 +8,6 @@ import { options } from "./utils";
 const Sidebar = () => {
   const { section, setSection } = useContext(SectionContext);
   const [hidden, setHidden] = useState(true);
-
-  useEffect(() => {
-    setSection(null);
-  });
 
   return (
     <div className="lg:hidden lg:min-h-14">
