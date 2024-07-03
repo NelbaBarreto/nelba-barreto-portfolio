@@ -26,13 +26,9 @@ const Description = () => {
       </h1>
       <Realistic onInit={onInit} />
       <section>
-        I'm a developer with +4 years of experience overall. Currently, I develop and optimize ETL scripts for data warehouses,
-        utilizing advanced Oracle SQL and PL/SQL. I have successfully enhanced the performance and quality of data
-        extraction, transformation, and loading processes. Previously, I worked as an Oracle developer and as a web
-        developer. In these roles, I contributed to projects involving modification, maintenance, and creation of information
-        systems, reports, and forms, with a focus on financial regulations compliance and customer service optimization. I
-        describe myself as a responsible, curious, and flexible professional, dedicated to continuous learning as a means to
-        enhance and expand my skills, both professionally and personally.
+        I am a results-oriented professional with experience in data manipulation. I leverage my strong SQL/PL/SQL skills to develop and optimize ETL scripts for data warehouses, significantly improving data quality and processing times. I am passionate about data-driven decision making and transforming raw data into actionable insights. 
+        Previously, I worked as a web developer, where I gained experience with project management, version control systems (Git, SVN), and user-centric design principles. This experience, coupled with my curiosity for data, led me to pursue data science and data engineering. I am currently learning Python and exploring data engineering frameworks to further my data manipulation and analysis skills.
+        I am a responsible, curious, and flexible learner, always seeking new challenges and opportunities to expand my skillset. My strong English communication skills allow me to collaborate effectively in international teams.
       </section>
     </div>
   )
