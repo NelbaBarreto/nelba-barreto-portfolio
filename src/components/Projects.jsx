@@ -28,7 +28,7 @@ const Projects = () => {
     {
       id: 0, 
       name: "DinoSource", 
-      description: "Under construction", 
+      description: "Under construction 🏗️", 
       image: { src: "https://www.nhm.ac.uk/resources/nature-online/life/dinosaurs/dinosaur-directory/images/reconstruction/small/gallim.jpg", alt: "A color photo of a polling station in Paraguay." },
       color: "bg-green-500"
     }
