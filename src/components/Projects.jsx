@@ -1,20 +1,22 @@
 import React from "react";
 import Title from "./Title";
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
+  const cardClassName = `px-6 py-4 ${project.color}`;
+
   return (
     <div
-      className="max-w-sm rounded overflow-hidden shadow-lg w-50 m-10 cursor-pointer"
+      className="max-w-sm rounded overflow-hidden shadow-lg w-50 m-10 cursor-pointer hover:shadow-retro-150"
     >
-      <img className="w-full" src="https://www.mre.gov.py/embapar-ecuador/application/files/4416/8304/8356/elex.jpg" alt="Sunset in the mountains"/>
-      <div className="px-6 py-4 bg-retro-50">
-        <div 
+      <img className="w-full" src={project.image?.src} alt={project.image?.alt} />
+      <div className={cardClassName}>
+        <div
           className="font-bold text-xl mb-2 text-white hover:underline"
         >
-          Exploring Facebook Reactions in Paraguay's Top Journals during Election Season
+          {project.name}
         </div>
         <p className="text-white text-base">
-          Under construction &#128679;
+          {project.description}
         </p>
       </div>
     </div>
@@ -22,10 +24,24 @@ const ProjectCard = () => {
 }
 
 const Projects = () => {
+  const projects = [
+    {
+      id: 0, 
+      name: "DinoSource", 
+      description: "Under construction", 
+      image: { src: "https://www.nhm.ac.uk/resources/nature-online/life/dinosaurs/dinosaur-directory/images/reconstruction/small/gallim.jpg", alt: "A color photo of a polling station in Paraguay." },
+      color: "bg-green-500"
+    }
+  ];
+
   return (
     <section id="projects">
       <Title>Projects</Title>
-      {/* <ProjectCard /> */}
+      <div className="grid grid-cols-1 lg:grid-cols-3">
+        {projects.map((project, id) => 
+          <ProjectCard key={id} project={project} />
+        )}
+      </div>
     </section>
   )
 }
