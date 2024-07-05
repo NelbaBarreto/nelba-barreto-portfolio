@@ -38,6 +38,7 @@ const Description = () => {
         <a
           href="https://drive.google.com/file/d/13xQk6tJKe40q_p5fiuT7O8ETOTwYs3-q/view?usp=sharing"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="text-lg mr-2">
             <FontAwesomeIcon icon={faFile} />
