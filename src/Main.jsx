@@ -5,6 +5,7 @@ import Descripcion from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
+import Certifications from "./components/Certifications.jsx";
 
 const App = () => {
   const [section, setSection] = useState(0);
@@ -17,6 +18,7 @@ const App = () => {
           <div className="lg:m-0 mx-4">
             <Descripcion />
             <Projects />
+            <Certifications />
             <Contact />
           </div>
         </div>
