@@ -5,6 +5,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <Title>Contact</Title>
+      <span></span>
       <span className="text-white">barretonelba@gmail.com</span>
       {/* <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-3xl tracking-tight font-bold text-center text-white">Let's Talk!</h2>
