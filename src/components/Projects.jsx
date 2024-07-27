@@ -35,7 +35,7 @@ const Projects = () => {
       name: "DinoSource",
       description: "Under construction. Explorative analysis of dinosaur data 🦖.",
       image: { src: gallimimus, alt: "A Gallimimus" },
-      link: "https://www.nhm.ac.uk/content/nhmwww/en/home/discover/dino-directory/gallimimus.html",
+      link: "https://dinosource.onrender.com",
       color: "bg-green-700"
     },
     {
