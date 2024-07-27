@@ -33,7 +33,7 @@ const Projects = () => {
     {
       id: 0,
       name: "DinoSource",
-      description: "Under construction. Explorative analysis of dinosaur data 🦖.",
+      description: "Under construction. Descriptive analysis of dinosaur data 🦕.",
       image: { src: gallimimus, alt: "A Gallimimus" },
       link: "https://dinosource.onrender.com",
       color: "bg-green-700"
