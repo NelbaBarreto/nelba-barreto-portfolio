@@ -28,9 +28,8 @@ const Description = () => {
       </h1>
       <Realistic onInit={onInit} />
       <section>
-        I am a results-oriented professional with experience in data manipulation. I leverage my strong SQL/PL/SQL skills to develop and optimize ETL scripts for data warehouses, significantly improving data quality and processing times. I am passionate about data-driven decision making and transforming raw data into actionable insights.
-        Previously, I worked as a web developer, where I gained experience with project management, version control systems (Git, SVN), and user-centric design principles. This experience, coupled with my curiosity for data, led me to pursue data science and data engineering. I am currently learning Python and exploring data engineering frameworks to further my data manipulation and analysis skills.
-        I am a responsible, curious, and flexible learner, always seeking new challenges and opportunities to expand my skillset. My strong English communication skills allow me to collaborate effectively in international teams.
+      I am a results-oriented professional with experience in data manipulation. I leverage my strong SQL/PL/SQL skills to develop and optimize ETL scripts for data warehouses, significantly improving data quality and processing times.
+      I am a responsible, curious, and flexible learner, always seeking new challenges and opportunities to expand my skillset.<br />Currently learning data science and aspiring to build a career in the data industry.
       </section>
       <button
         className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-retro-100 sm:w-fit hover:bg-retro-50 mt-2"
