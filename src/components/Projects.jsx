@@ -4,7 +4,7 @@ import spaceRace from "../img/space_race.jpg";
 import gallimimus from "../img/gallimimus.jpg";
 
 const ProjectCard = ({ project }) => {
-  const cardClassName = `px-6 py-4 ${project.color}`;
+  const cardClassName = `px-6 py-4 h-full ${project.color}`;
 
   return (
     <a
