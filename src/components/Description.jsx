@@ -35,7 +35,7 @@ const Description = () => {
         className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-retro-100 sm:w-fit hover:bg-retro-50 mt-2"
       >
         <a
-          href="https://drive.google.com/file/d/13xQk6tJKe40q_p5fiuT7O8ETOTwYs3-q/view?usp=sharing"
+          href="https://drive.google.com/file/d/1YEriEGesvRtiAlN9TDnYFdnV9odPaFK1/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
