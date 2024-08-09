@@ -23,6 +23,9 @@ const ProjectCard = ({ project }) => {
         <p className="text-white text-base">
           {project.description}
         </p>
+        <div class="pt-4 pb-2">
+        {project.tags.map(tag => (<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#{tag}</span>))}
+        </div>
       </div>
     </a>
   )
@@ -33,10 +36,11 @@ const Projects = () => {
     {
       id: 0,
       name: "DinoSource",
-      description: "Under construction. Descriptive analysis of dinosaur data 🦕.",
+      description: "Descriptive analysis of dinosaur data 🦕.",
       image: { src: gallimimus, alt: "A Gallimimus" },
       link: "https://dinosource.onrender.com",
-      color: "bg-green-700"
+      color: "bg-green-700",
+      tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
     },
     {
       id: 1,
@@ -44,7 +48,8 @@ const Projects = () => {
       description: "Final project to obtain the IBM Data Science Professional Certificate 🚀.",
       image: { src: spaceRace, alt: "A rocket" },
       link: "https://github.com/NelbaBarreto/applied-data-science-capstone",
-      color: "bg-green-700"
+      color: "bg-green-700",
+      tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
     },
 
   ];
