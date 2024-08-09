@@ -1,5 +1,8 @@
 import React from "react";
 import Title from "./Title";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import spaceRace from "../img/space_race.jpg";
 import gallimimus from "../img/gallimimus.jpg";
 
@@ -7,27 +10,44 @@ const ProjectCard = ({ project }) => {
   const cardClassName = `px-6 py-4 h-full ${project.color}`;
 
   return (
-    <a
-      className="max-w-sm rounded overflow-hidden shadow-lg w-50 m-10 cursor-pointer hover:shadow-retro-150"
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
+      className="max-w-sm rounded overflow-hidden shadow-lg w-50 m-10"
     >
       <img className="w-full" src={project.image?.src} alt={project.image?.alt} />
       <div className={cardClassName}>
-        <div
+        <a
           className="font-bold text-xl mb-2 text-white hover:underline"
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {project.name}
-        </div>
+          <span>{project.name}</span>
+          <span className="text-lg ml-2">
+            <FontAwesomeIcon icon={faUpRightFromSquare} />
+          </span>
+        </a>
         <p className="text-white text-base">
           {project.description}
         </p>
-        <div class="pt-4 pb-2">
-        {project.tags.map(tag => (<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#{tag}</span>))}
+        <div className="pt-4 pb-2">
+          {project.tags.map(tag => (<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">#{tag}</span>))}
         </div>
+        <button
+          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-black sm:w-fit -50 mt-2 hover:shadow-gray-700 hover:shadow-md"
+        >
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="text-lg mr-2">
+              <FontAwesomeIcon icon={faGithub} />
+            </span>
+            <span>View on GitHub</span>
+          </a>
+        </button>
       </div>
-    </a>
+    </div>
   )
 }
 
@@ -39,6 +59,7 @@ const Projects = () => {
       description: "Descriptive analysis of dinosaur data 🦕.",
       image: { src: gallimimus, alt: "A Gallimimus" },
       link: "https://dinosource.onrender.com",
+      github: "https://github.com/NelbaBarreto/dinosource_dash",
       color: "bg-green-700",
       tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
     },
@@ -47,7 +68,8 @@ const Projects = () => {
       name: "Applied Data Science Capstone",
       description: "Final project to obtain the IBM Data Science Professional Certificate 🚀.",
       image: { src: spaceRace, alt: "A rocket" },
-      link: "https://github.com/NelbaBarreto/applied-data-science-capstone",
+      link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
+      github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
       color: "bg-green-700",
       tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
     },
