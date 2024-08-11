@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
+import { resume_languages } from "./utils";
 
 const Description = () => {
   const [conductor, setConductor] = useState();
+  const [selected, setSelected] = useState(resume_languages[0]);
 
   const onOnce = () => {
     conductor?.shoot();
@@ -16,21 +16,33 @@ const Description = () => {
 
   const Resume = () => {
     return (
-      <div class="flex items-center space-x-4">
+      <div className="flex">
         <button
-          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-retro-100 sm:w-fit hover:bg-retro-50"
+          className="font-semibold py-2 px-2 text-center text-white rounded-l-lg bg-retro-100 sm:w-fit hover:bg-retro-50"
         >
           <a
-            href="https://drive.google.com/file/d/1YEriEGesvRtiAlN9TDnYFdnV9odPaFK1/view?usp=sharing"
+            href={selected?.link}
             target="_blank"
             rel="noreferrer"
           >
-            <span className="text-lg mr-2">
-              <FontAwesomeIcon icon={faFile} />
-            </span>
-            <span>View my Resume</span>
+            View my Resume
           </a>
         </button>
+        <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50">
+          <select
+            id="languages"
+            className="bg-retro-100 font-semibold rounded-r-lg min-h-full cursor-pointer text-xl hover:bg-retro-50"
+            value={selected.value}
+            onChange={(e) => setSelected(resume_languages.find(lang => lang.value === e.target.value))}
+          >
+            {resume_languages.map(lang => (
+              <option key={lang.id} value={lang.value}>
+                &nbsp;{lang.text}
+              </option>
+            ))}
+          </select>
+        </form>
+
       </div>
 
     )
