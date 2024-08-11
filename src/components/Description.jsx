@@ -52,9 +52,9 @@ const Description = () => {
     return (
       <div className="mb-4">
         <section>
-          I am a results-oriented professional with experience in data manipulation. I leverage my strong SQL/PL/SQL skills to develop and optimize ETL scripts for data warehouses, significantly improving data quality and processing times.
-          I am a responsible, curious, and flexible learner, always seeking new challenges and opportunities to expand my skillset.<br />
-          Currently learning data science and aspiring to build a career in the data industry.
+          <p>I am a results-oriented professional with over five years of experience in data manipulation and ETL development. I leverage my expertise in SQL/PLSQL and Python to enhance data quality and streamline processing times for data warehouses.</p>
+          <p>I want to transition into a data engineering role where I can work with cloud technologies. I am dedicated to continuous learning and seeking new challenges to expand my skills in modern data engineering practices.</p>
+          <p>I aim to join a team that utilizes cutting-edge technologies to drive data solutions and contribute to impactful projects.</p>
         </section>
         <br />
         <span className="font-semibold">

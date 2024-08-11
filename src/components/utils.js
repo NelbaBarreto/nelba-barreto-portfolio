@@ -9,8 +9,8 @@ export const options = [
 ]
 
 export const resume_languages = [
-  { id: 0, value: "EN", text: "🇺🇸", link: "https://drive.google.com/file/d/1YEriEGesvRtiAlN9TDnYFdnV9odPaFK1/view?usp=sharing" },
-  { id: 1, value: "ES", text: "🇪🇸", link: "https://drive.google.com/file/d/1YEriEGesvRtiAlN9TDnYFdnV9odPaFK1/view?usp=sharing" }
+  { id: 0, value: "EN", text: "🇺🇸", link: "https://drive.google.com/file/d/1RlD3KLAWJ_cEL03NZqLks7rbvwZ_SCBP/view?usp=sharing" },
+  { id: 1, value: "ES", text: "🇪🇸", link: "https://drive.google.com/file/d/10heteBeY3gdv7HbdE6R-biDSCdgyb06D/view?usp=sharing" }
 ]
 
 export const projects = [
