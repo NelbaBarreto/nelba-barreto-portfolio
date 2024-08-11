@@ -61,6 +61,9 @@ const Projects = () => {
   return (
     <section id="projects">
       <Title>Projects</Title>
+      <p className="text-white">
+        Although I participated in several projects throughout my professional career, which can be seen on my LinkedIn and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.
+      </p>
       <div className="grid grid-cols-1 lg:grid-cols-3">
         {projects.map((project, id) =>
           <ProjectCard key={id} project={project} />
