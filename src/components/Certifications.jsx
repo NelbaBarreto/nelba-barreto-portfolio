@@ -36,6 +36,8 @@ const Certifications = () => {
       >
         <ImageGallery
           items={images}
+          lazyLoad={true}
+          autoPlay={true}
         />
       </div>
     </section>
