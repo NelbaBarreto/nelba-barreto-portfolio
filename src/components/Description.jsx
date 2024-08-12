@@ -31,7 +31,7 @@ const Description = () => {
         <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50">
           <select
             id="languages"
-            className="bg-retro-100 font-semibold rounded-r-lg min-h-full cursor-pointer text-xl hover:bg-retro-50"
+            className="bg-retro-100 rounded-r-lg min-h-full cursor-pointer text-xl hover:bg-retro-50"
             value={selected.value}
             onChange={(e) => setSelected(resume_languages.find(lang => lang.value === e.target.value))}
           >
