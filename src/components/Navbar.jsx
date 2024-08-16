@@ -12,7 +12,7 @@ const Navbar = () => {
   const navbarItemClassName = "navbar-item text-background-50 font-semibold text-lg";
 
   return (
-    <nav className="navbar bg-retro-150 border-b-retro-100 border-b-4">
+    <nav className="navbar bg-retro-150">
       <div className="navbar-menu hidden">
         <div className="navbar-start">
           {options.map((option, index) => {

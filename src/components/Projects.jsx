@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section className="bg-gray-800 rounded-lg mt-5  p-10" id="projects">
       <Title>Projects</Title>
       <br />
       <p className="text-white">

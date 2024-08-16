@@ -17,27 +17,27 @@ const Description = () => {
 
   const Resume = () => {
     return (
-      <div className="flex">
+      <div className="flex items-stretch">
         <a
           href={selected?.link}
-          className="font-semibold py-2 px-2 text-center text-white rounded-l-lg bg-retro-100 sm:w-fit hover:bg-retro-50"
+          className="font-semibold py-2 px-4 text-center text-white rounded-l-lg bg-retro-100 hover:bg-retro-50 flex items-center"
           target="_blank"
           rel="noreferrer"
         >
           View my Resume
         </a>
-        <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50">
+        <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50 flex items-center">
           <CustomDropdown
             options={resume_languages}
             selected={selected}
             setSelected={setSelected}
+            className="h-full"
           />
         </form>
       </div>
-
-    )
-  }
-
+    );
+  }  
+  
   const Main = () => {
     return (
       <div className="mb-4">

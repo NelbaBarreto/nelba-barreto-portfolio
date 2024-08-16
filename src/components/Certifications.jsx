@@ -29,7 +29,7 @@ const images = [
 const Certifications = () => {
 
   return (
-    <section id="certifications">
+    <section className="bg-gray-800 rounded-lg mt-5 p-10" id="certifications">
       <Title>Certifications & Certificates</Title>
       <div
         className="max-w-xl rounded overflow-hidden w-50 mx-auto my-10"

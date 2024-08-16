@@ -4,16 +4,18 @@ import Description from "./Description";
 
 const Header = () => {
   return (
-    <header className="py-10" id="home">
-      <div className="grid grid-cols-1 lg:grid-cols-4">
-        <div className="mx-auto my-auto">
-          <img src={foto} className="h-60 rounded-full" alt="foto nelba barreto" />
+    <div className="bg-gray-800 rounded-lg mt-5">
+      <header className="py-10" id="home">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
+          <div className="mx-auto my-auto">
+            <img src={foto} className="h-60 rounded-full" alt="foto nelba barreto" />
+          </div>
+          <div className="lg:col-span-3">
+            <Description />
+          </div>
         </div>
-        <div className="lg:col-span-3">
-          <Description />
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
   )
 }
 
