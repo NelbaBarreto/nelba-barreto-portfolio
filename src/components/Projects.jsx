@@ -38,20 +38,17 @@ const ProjectCard = ({ project }) => {
             )
           })}
         </div>
-        <button
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noreferrer"
           className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-black sm:w-fit -50 mt-2 hover:shadow-gray-700 hover:shadow-md"
         >
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="text-lg mr-2">
-              <FontAwesomeIcon icon={faGithub} />
-            </span>
-            <span>View on GitHub</span>
-          </a>
-        </button>
+          <span className="text-lg mr-2">
+            <FontAwesomeIcon icon={faGithub} />
+          </span>
+          <span>View on GitHub</span>
+        </a>
       </div>
     </div>
   )
