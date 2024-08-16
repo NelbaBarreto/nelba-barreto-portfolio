@@ -17,17 +17,14 @@ const Description = () => {
   const Resume = () => {
     return (
       <div className="flex">
-        <button
+        <a
+          href={selected?.link}
           className="font-semibold py-2 px-2 text-center text-white rounded-l-lg bg-retro-100 sm:w-fit hover:bg-retro-50"
+          target="_blank"
+          rel="noreferrer"
         >
-          <a
-            href={selected?.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            View my Resume
-          </a>
-        </button>
+          View my Resume
+        </a>
         <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50">
           <select
             id="languages"
