@@ -1,5 +1,7 @@
 import spaceRace from "../img/space_race.jpg";
 import gallimimus from "../img/gallimimus.jpg";
+import usa from "../img/icons8-usa-96.png";
+import spain from "../img/icons8-spain-96.png";
 
 export const options = [
   { id: 0, label: "Home", href: "#home" },
@@ -9,8 +11,8 @@ export const options = [
 ]
 
 export const resume_languages = [
-  { id: 0, value: "EN", text: "🇺🇸", link: "https://drive.google.com/file/d/1RlD3KLAWJ_cEL03NZqLks7rbvwZ_SCBP/view?usp=sharing" },
-  { id: 1, value: "ES", text: "🇪🇸", link: "https://drive.google.com/file/d/10heteBeY3gdv7HbdE6R-biDSCdgyb06D/view?usp=sharing" }
+  { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1RlD3KLAWJ_cEL03NZqLks7rbvwZ_SCBP/view?usp=sharing", texto: "In english" },
+  { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/10heteBeY3gdv7HbdE6R-biDSCdgyb06D/view?usp=sharing", texto: "En español"  }
 ]
 
 export const projects = [

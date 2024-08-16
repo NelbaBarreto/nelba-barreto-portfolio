@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
+import CustomDropdown from "./CustomDropdown";
 import { resume_languages } from "./utils";
 
 const Description = () => {
@@ -26,20 +27,12 @@ const Description = () => {
           View my Resume
         </a>
         <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50">
-          <select
-            id="languages"
-            className="bg-retro-100 rounded-r-lg min-h-full cursor-pointer text-xl hover:bg-retro-50"
-            value={selected.value}
-            onChange={(e) => setSelected(resume_languages.find(lang => lang.value === e.target.value))}
-          >
-            {resume_languages.map(lang => (
-              <option key={lang.id} value={lang.value}>
-                &nbsp;{lang.text}
-              </option>
-            ))}
-          </select>
+          <CustomDropdown
+            options={resume_languages}
+            selected={selected}
+            setSelected={setSelected}
+          />
         </form>
-
       </div>
 
     )
