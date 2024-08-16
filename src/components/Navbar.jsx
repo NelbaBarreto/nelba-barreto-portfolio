@@ -33,32 +33,32 @@ const Navbar = () => {
             <div className="buttons my-auto">
               <button>
                 <a
-                  className="text-3xl text-background-50 mx-2"
+                  className="text-background-50 mx-2"
                   href="https://www.linkedin.com/in/nelba-barreto/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faLinkedin} size="2xl" />
                 </a>
               </button>
               <button>
                 <a
-                  className="text-3xl text-background-50 mx-2"
+                  className="text-background-50 mx-2"
                   href="https://github.com/NelbaBarreto/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} size="2xl" />
                 </a>
               </button>
               <button>
                 <a
-                  className="text-3xl text-background-50 mx-2"
+                  className="text-background-50 mx-2"
                   href="mailto:barretonelba@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faEnvelope} />
+                  <FontAwesomeIcon icon={faEnvelope} size="2xl" />
                 </a>
               </button>
             </div>
