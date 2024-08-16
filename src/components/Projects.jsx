@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="max-w-sm rounded overflow-hidden shadow-lg w-50 my-10"
+      className="max-w-sm rounded-lg overflow-hidden shadow-lg w-50 my-10"
     >
       <img className="w-full" src={project.image?.src} alt={project.image?.alt} />
       <div className={cardClassName}>
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
           {project.tags.map((tag, idx) => {
             return (
               <span key={idx}
-                className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 hover:shadow-md hover:shadow-retro-150">
+                className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 hover:shadow-md hover:shadow-retro-100">
                 #{tag}
               </span>
             )

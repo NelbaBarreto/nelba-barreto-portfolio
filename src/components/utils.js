@@ -11,8 +11,8 @@ export const options = [
 ]
 
 export const resume_languages = [
-  { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1RlD3KLAWJ_cEL03NZqLks7rbvwZ_SCBP/view?usp=sharing", texto: "In english" },
-  { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/10heteBeY3gdv7HbdE6R-biDSCdgyb06D/view?usp=sharing", texto: "En español"  }
+  { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1RlD3KLAWJ_cEL03NZqLks7rbvwZ_SCBP/view?usp=sharing", texto: "English" },
+  { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/10heteBeY3gdv7HbdE6R-biDSCdgyb06D/view?usp=sharing", texto: "Español"  }
 ]
 
 export const projects = [
@@ -23,7 +23,7 @@ export const projects = [
     image: { src: gallimimus, alt: "A Gallimimus" },
     link: "https://dinosource.onrender.com",
     github: "https://github.com/NelbaBarreto/dinosource_dash",
-    color: "bg-green-700",
+    color: "bg-retro-50",
     tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
   },
   {
@@ -33,7 +33,7 @@ export const projects = [
     image: { src: spaceRace, alt: "A rocket" },
     link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
     github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
-    color: "bg-green-700",
+    color: "bg-retro-50",
     tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
   },
 

@@ -20,7 +20,7 @@ const Description = () => {
       <div className="flex items-stretch">
         <a
           href={selected?.link}
-          className="font-semibold py-2 px-4 text-center text-white rounded-l-lg bg-retro-100 hover:bg-retro-50 flex items-center"
+          className="font-semibold py-2 px-4 text-center text-white rounded-l-lg hover:bg-retro-100 bg-retro-50 flex items-center"
           target="_blank"
           rel="noreferrer"
         >
@@ -55,11 +55,7 @@ const Description = () => {
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            <span
-              className="group bg-gradient-to-r from-[rgba(255,0,0,1)] via-[rgba(255,255,255,1)] to-[rgba(0,0,255,1)] bg-clip-text text-transparent font-bold"
-            >
-              Paraguay
-            </span>
+            <span>Paraguay</span>
           </a>
           &nbsp;(GMT-4)&nbsp;&nbsp;
         </span>
@@ -72,7 +68,7 @@ const Description = () => {
       <h1 className="sm:text-5xl text-4xl text-white font-bold my-2 lg:mb-4 lg:my-0">
         Hello! I'm&nbsp;
         <button
-          className="text-retro-150"
+          className="text-retro-100"
           onClick={onOnce}
         >
           Nelba

@@ -24,8 +24,8 @@ const Sidebar = () => {
           return (
             <a
               key={index}
-              className={classNames("block border-b-background-50 text-white text-md py-2 px-4 w-36 hover:bg-retro-200 hover:font-semibold", 
-              { "bg-retro-200 font-semibold": section === option.id, 
+              className={classNames("block border-b-background-50 text-white text-md py-2 px-4 w-36 hover:bg-retro-50 hover:font-semibold", 
+              { "bg-retro-50 font-semibold": section === option.id, 
                 "border-b": option.id !== (options.length) - 1,
                 "rounded-b-md": option.id === (options.length) - 1,
                 "rounded-t-lg": option.id === 0

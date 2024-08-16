@@ -12,14 +12,14 @@ const Navbar = () => {
   const navbarItemClassName = "navbar-item text-background-50 font-semibold text-lg";
 
   return (
-    <nav className="navbar bg-retro-150">
+    <nav className="navbar bg-retro-100">
       <div className="navbar-menu hidden">
         <div className="navbar-start">
           {options.map((option, index) => {
             return (
               <a
                 key={index}
-                className={classNames(navbarItemClassName, { "bg-retro-200 text-white": section === option.id })}
+                className={classNames(navbarItemClassName, { "bg-retro-50 text-white": section === option.id })}
                 href={option.href}
                 onClick={() => setSection(option.id)}
               >
@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="buttons my-auto">
               <button>
                 <a
-                  className="text-background-50 mx-2"
+                  className="text-white mx-2"
                   href="https://www.linkedin.com/in/nelba-barreto/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Navbar = () => {
               </button>
               <button>
                 <a
-                  className="text-background-50 mx-2"
+                  className="text-white mx-2"
                   href="https://github.com/NelbaBarreto/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const Navbar = () => {
               </button>
               <button>
                 <a
-                  className="text-background-50 mx-2"
+                  className="text-white mx-2"
                   href="mailto:barretonelba@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
