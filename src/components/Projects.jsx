@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
           {project.tags.map((tag, idx) => {
             return (
               <span key={idx}
-                className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 hover:shadow-md hover:shadow-retro-100">
+                className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 hover:shadow-md hover:shadow-gray-700">
                 #{tag}
               </span>
             )
@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
           href={project.github}
           target="_blank"
           rel="noreferrer"
-          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-black sm:w-fit -50 mt-2 hover:shadow-gray-700 hover:shadow-md"
+          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-background-50 sm:w-fit -50 mt-2 hover:shadow-gray-700 hover:shadow-md"
         >
           <span className="text-lg mr-2">
             <FontAwesomeIcon icon={faGithub} />
@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section className="bg-gray-800 rounded-lg mt-5  p-10" id="projects">
+    <section className="bg-gray-800 rounded-lg mt-5 p-10" id="projects">
       <Title>Projects</Title>
       <br />
       <p className="text-white">
