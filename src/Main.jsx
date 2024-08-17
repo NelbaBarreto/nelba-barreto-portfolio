@@ -6,10 +6,12 @@ import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Certifications from "./components/Certifications.jsx";
+import Footer from "./components/Footer.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Iguanodon from "./components/Iguanodon.jsx";
 
 const Main = () => {
   return (
@@ -23,6 +25,7 @@ const Main = () => {
           <Contact />
         </div>
       </div>
+      <Footer />
     </>
   )
 }
@@ -35,6 +38,10 @@ const App = () => {
       path: "/",
       element: <Main />,
     },
+    {
+      path: "/iguanodon",
+      element: <Iguanodon />
+    }
   ]);
 
   return (
