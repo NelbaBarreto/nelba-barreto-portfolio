@@ -23,10 +23,10 @@ const CustomDropdown = ({ options, selected, setSelected }) => {
   }, []);
 
   return (
-    <div ref={dropdownRef} className="relative inline-block text-left bg-retro-50 rounded-r-lg min-h-full h-full">
+    <div ref={dropdownRef} className="relative inline-block text-left bg-purple-700 rounded-r-lg min-h-full h-full">
       <button
         type="button"
-        className="rounded-r-lg min-h-full h-full cursor-pointer text-xl bg-retro-50 inline-flex items-center"
+        className="rounded-r-lg min-h-full h-full cursor-pointer text-xl bg-purple-700 inline-flex items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         <img
@@ -37,12 +37,12 @@ const CustomDropdown = ({ options, selected, setSelected }) => {
       </button>
 
       {isOpen && (
-        <div className="bg-retro-50 absolute right-0 mt-2 w-40 rounded-md">
+        <div className="bg-purple-700 absolute right-0 mt-2 w-40 rounded-md">
           <div className="py-1">
             {options.map((option) => (
               <div
                 key={option.id}
-                className="px-4 py-1 text-sm cursor-pointer flex items-center hover:bg-retro-100"
+                className="px-4 py-1 text-sm cursor-pointer flex items-center hover:bg-purple-500"
                 onClick={() => handleSelect(option)}
               >
                 <img

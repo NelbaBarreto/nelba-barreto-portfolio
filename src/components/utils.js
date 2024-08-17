@@ -23,7 +23,7 @@ export const projects = [
     image: { src: gallimimus, alt: "A Gallimimus" },
     link: "https://dinosource.onrender.com",
     github: "https://github.com/NelbaBarreto/dinosource_dash",
-    color: "bg-retro-50",
+    color: "bg-purple-700",
     tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
   },
   {
@@ -33,7 +33,7 @@ export const projects = [
     image: { src: spaceRace, alt: "A rocket" },
     link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
     github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
-    color: "bg-retro-50",
+    color: "bg-purple-700",
     tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
   },
 

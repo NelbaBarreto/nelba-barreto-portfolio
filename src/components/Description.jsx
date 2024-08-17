@@ -20,13 +20,13 @@ const Description = () => {
       <div className="flex items-stretch">
         <a
           href={selected?.link}
-          className="font-semibold py-2 px-4 text-center text-white rounded-l-lg hover:bg-retro-100 bg-retro-50 flex items-center"
+          className="font-semibold py-2 px-4 text-center text-white rounded-l-lg hover:bg-purple-500 bg-purple-700 flex items-center"
           target="_blank"
           rel="noreferrer"
         >
           View my Resume
         </a>
-        <form className="bg-retro-100 rounded-r-lg hover:bg-retro-50 flex items-center">
+        <form className="bg-purple-500 rounded-r-lg hover:bg-purple-700 flex items-center">
           <CustomDropdown
             options={resume_languages}
             selected={selected}
@@ -68,7 +68,7 @@ const Description = () => {
       <h1 className="sm:text-5xl text-4xl text-white font-bold my-2 lg:mb-4 lg:my-0">
         Hello! I'm&nbsp;
         <button
-          className="text-retro-100"
+          className="text-purple-500"
           onClick={onOnce}
         >
           Nelba

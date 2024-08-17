@@ -9,17 +9,17 @@ import { options } from "./utils";
 
 const Navbar = () => {
   const { section, setSection } = useContext(SectionContext);
-  const navbarItemClassName = "navbar-item text-background-50 font-semibold text-lg";
+  const navbarItemClassName = "navbar-item font-semibold text-lg text-white";
 
   return (
-    <nav className="navbar bg-retro-100">
+    <nav className="navbar bg-purple-500">
       <div className="navbar-menu hidden">
         <div className="navbar-start">
           {options.map((option, index) => {
             return (
               <a
                 key={index}
-                className={classNames(navbarItemClassName, { "bg-retro-50 text-white": section === option.id })}
+                className={classNames(navbarItemClassName, { "bg-purple-700": section === option.id })}
                 href={option.href}
                 onClick={() => setSection(option.id)}
               >
