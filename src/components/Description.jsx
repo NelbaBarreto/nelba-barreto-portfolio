@@ -20,13 +20,13 @@ const Description = () => {
       <div className="flex items-stretch">
         <a
           href={selected?.link}
-          className="font-semibold py-2 px-4 text-center text-white rounded-l-lg hover:bg-purple-500 bg-purple-700 flex items-center"
+          className=" border-purple-950 border-y border-l font-semibold py-2 px-4 text-center text-white rounded-l-lg hover:bg-purple-500 bg-purple-700 flex items-center"
           target="_blank"
           rel="noreferrer"
         >
           View my Resume
         </a>
-        <form className="bg-purple-500 rounded-r-lg hover:bg-purple-700 flex items-center">
+        <form className="bg-purple-500 rounded-r-lg border-purple-950 border-y border-r hover:bg-purple-700 flex items-center">
           <CustomDropdown
             options={resume_languages}
             selected={selected}

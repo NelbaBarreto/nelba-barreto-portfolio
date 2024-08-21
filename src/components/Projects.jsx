@@ -6,14 +6,12 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "./utils";
 
 const ProjectCard = ({ project }) => {
-  const cardClassName = `px-6 py-4 h-full ${project.color}`;
-
   return (
     <div
-      className="max-w-sm rounded-lg overflow-hidden shadow-lg w-50 my-10"
+      className="max-w-sm border-purple-950 border rounded-lg overflow-hidden shadow-lg w-50 my-10 m-auto"
     >
       <img className="w-full" src={project.image?.src} alt={project.image?.alt} />
-      <div className={cardClassName}>
+      <div className={`px-6 py-4 h-full ${project.color}`}>
         <a
           className="font-bold text-xl mb-2 text-white hover:underline"
           href={project.link}
@@ -56,7 +54,7 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section className="bg-gray-800 rounded-lg mt-5 p-10" id="projects">
+    <section className="bg-gray-800 rounded-lg mt-5 p-10 border border-gray-950" id="projects">
       <Title>Projects</Title>
       <br />
       <p className="text-white">

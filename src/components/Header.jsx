@@ -4,7 +4,7 @@ import Description from "./Description";
 
 const Header = () => {
   return (
-    <div className="bg-gray-800 rounded-lg mt-5 p-10">
+    <div className="bg-gray-800 border border-gray-950 rounded-lg mt-5 p-10">
       <header className="py-10" id="home">
         <div className="grid grid-cols-1 lg:grid-cols-4">
           <div className="mx-auto my-auto">
