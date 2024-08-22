@@ -2,6 +2,7 @@ import spaceRace from "../img/space_race.jpg";
 import gallimimus from "../img/gallimimus.jpg";
 import usa from "../img/icons8-usa-96.png";
 import spain from "../img/icons8-spain-96.png";
+// import spotify from "../img/spotify.jpeg";
 
 export const options = [
   { id: 0, label: "Home", href: "#home" },
@@ -23,7 +24,6 @@ export const projects = [
     image: { src: gallimimus, alt: "A Gallimimus" },
     link: "https://dinosource.onrender.com",
     github: "https://github.com/NelbaBarreto/dinosource_dash",
-    color: "bg-purple-700",
     tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
   },
   {
@@ -33,8 +33,15 @@ export const projects = [
     image: { src: spaceRace, alt: "A rocket" },
     link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
     github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
-    color: "bg-purple-700",
     tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
   },
-
+  /*{
+    id: 2,
+    name: "Get to Know me Through Music",
+    description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API.",
+    image: { src: spotify, alt: "Spotify App Logo" },
+    link: "#",
+    github: "#",
+    tags: ["azure"]
+  },*/
 ];

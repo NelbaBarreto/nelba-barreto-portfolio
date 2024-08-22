@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <section className="bg-gray-800 border border-gray-950 rounded-lg p-10 my-5" id="contact">
+    <section className="bg-gray-800 border border-gray-950 rounded-lg p-10 my-5 shadow-md shadow-gray-950" id="contact">
       <Title>Contact</Title>
       <br />
       <ul className="inline">

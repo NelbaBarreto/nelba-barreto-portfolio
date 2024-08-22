@@ -6,7 +6,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="my-4 mx-10">
+    <div className="my-4 mx-5">
       <hr className="h-px my-4 bg-gray-400 border-0" />
       <div className="flex items-center justify-center">
         <span className="text-gray-400 mr-4">
