@@ -65,7 +65,7 @@ const Description = () => {
 
   return (
     <div className="text-white">
-      <h1 className="md:text-5xl text-3xl sm:text-4xl text-white font-bold my-2 lg:mb-4 lg:my-0">
+      <h1 className="md:text-5xl text-xl sm:text-4xl text-white font-bold my-2 lg:mb-4 lg:my-0">
         Hello! I'm&nbsp;
         <button
           className="text-purple-500"
