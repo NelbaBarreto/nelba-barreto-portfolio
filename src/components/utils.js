@@ -2,7 +2,7 @@ import spaceRace from "../img/space_race.jpg";
 import gallimimus from "../img/gallimimus.jpg";
 import usa from "../img/icons8-usa-96.png";
 import spain from "../img/icons8-spain-96.png";
-// import spotify from "../img/spotify.jpeg";
+// import spotify from "../img/spotify.jpg";
 
 export const options = [
   { id: 0, label: "Home", href: "#home" },
@@ -35,13 +35,13 @@ export const projects = [
     github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
     tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
   },
-  /*{
-    id: 2,
-    name: "Get to Know me Through Music",
-    description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API.",
-    image: { src: spotify, alt: "Spotify App Logo" },
-    link: "#",
-    github: "#",
-    tags: ["azure"]
-  },*/
+  // {
+  //   id: 2,
+  //   name: "Get to Know me Through Music",
+  //   description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
+  //   image: { src: spotify, alt: "Spotify App Logo" },
+  //   link: "#",
+  //   github: "#",
+  //   tags: ["azure "]
+  // },
 ];
