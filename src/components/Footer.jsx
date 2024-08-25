@@ -21,7 +21,9 @@ const Footer = () => {
       </div>
       <br />
         <span className="text-white text-xs">
-          <a target="_blank" href="https://icons8.com/icon/121371/cat">Cat</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <a target="_blank" href="https://icons8.com/icon/121371/cat" rel="noreferrer">
+            Cat
+          </a> icon by <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
         </span>
     </div>
   );
