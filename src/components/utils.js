@@ -41,7 +41,6 @@ export const projects = [
     description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
     image: { src: spotify, alt: "Spotify App Logo" },
     link: "#",
-    github: "#",
-    tags: ["azure "]
+    tags: ["azure data factory", "azure data lake"]
   },
 ];

@@ -36,7 +36,7 @@ const ProjectCard = ({ project }) => {
             )
           })}
         </div>
-        <a
+        {project.github ? <a
           href={project.github}
           target="_blank"
           rel="noreferrer"
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
             <FontAwesomeIcon icon={faGithub} />
           </span>
           <span>View on GitHub</span>
-        </a>
+        </a> : null}
       </div>
     </div>
   )
