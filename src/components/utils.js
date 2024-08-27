@@ -40,7 +40,7 @@ export const projects = [
     name: "Get to Know me Through Music",
     description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
     image: { src: spotify, alt: "Spotify App Logo" },
-    link: "#",
+    link: "https://nelbabarreto.com/spotify",
     tags: ["azure data factory", "azure data lake"]
   },
 ];

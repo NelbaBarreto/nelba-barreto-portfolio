@@ -8,7 +8,7 @@ import { projects } from "./utils";
 const ProjectCard = ({ project }) => {
   return (
     <div
-      className="max-w-sm border-purple-950 border rounded-lg overflow-hidden shadow-md shadow-gray-950 w-50 my-10 m-auto"
+      className="max-w-sm border-gray-950 border rounded-lg overflow-hidden shadow-md shadow-gray-950 w-50 my-10 m-auto"
     >
       <img className="w-full" src={project.image?.src} alt={project.image?.alt} />
       <div className="px-6 py-4 h-full bg-purple-700">
