@@ -76,7 +76,7 @@ const Contact = () => {
         <div className="border-t border-gray-500 flex-grow ml-3"></div>
       </div>
 
-      {formSubmitted ? <h3 className="text-lg text-white font-bold">Your message has been sent</h3> : <form onSubmit={handleSubmit} className="mt-8 space-y-6" name="contact" netlify>
+      {formSubmitted ? <div className="border-purple-700 p-2 w-full bg-purple-100 text-purple-700 rounded-lg">Your message has been sent</div> : <form onSubmit={handleSubmit} className="mt-8 space-y-6" name="contact" netlify>
         <h3 className="text-lg text-white font-bold">Send me a Message! 💜</h3>
         <div>
           <label htmlFor="name" className="block text-white text-sm font-medium">
