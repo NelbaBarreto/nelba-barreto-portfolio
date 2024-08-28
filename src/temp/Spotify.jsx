@@ -28,21 +28,19 @@ const Spotify = () => {
       </code>
       <div className="flex justify-center space-x-4 mt-5">
         <button
-          className={`border-purple-950 border px-4 py-2 rounded-lg text-white ${
-            activeTab === "tracks"
+          className={`border-purple-950 border px-4 py-2 rounded-lg text-white ${activeTab === "tracks"
               ? "bg-purple-700 text-white"
               : "bg-[#0f172a] text-gray-300"
-          }`}
+            }`}
           onClick={() => handleTabClick("tracks")}
         >
           Top Tracks
         </button>
         <button
-          className={`border-purple-950 border px-4 py-2 rounded-lg text-white ${
-            activeTab === "artists"
+          className={`border-purple-950 border px-4 py-2 rounded-lg text-white ${activeTab === "artists"
               ? "bg-purple-700 text-white"
               : "bg-[#0f172a] text-gray-300"
-          }`}
+            }`}
           onClick={() => handleTabClick("artists")}
         >
           Top Artists
@@ -62,7 +60,16 @@ const Spotify = () => {
             />
             <h3 className="text-white text-lg font-semibold">{item.name}</h3>
             <p className="text-white">
-              {activeTab === "tracks" ? item.artists[0].name : item.genres.join(", ")}
+              {activeTab === "tracks" ? item.artists[0].name : <div className="pt-4 pb-2">
+                {item.genres.map((tag, idx) => {
+                  return (
+                    <span key={idx}
+                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-md shadow-gray-950">
+                      {tag}
+                    </span>
+                  )
+                })}
+              </div>}
             </p>
             {activeTab === "tracks" && (
               <p className="text-gray-400">{item.album.name}</p>
