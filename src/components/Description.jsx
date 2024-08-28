@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
-import CustomDropdown from "./CustomDropdown";
+// import CustomDropdown from "./CustomDropdown";
 import { resume_languages } from "./utils";
 
 const Description = () => {
   const [conductor, setConductor] = useState();
-  const [selected, setSelected] = useState(resume_languages[0]);
+  // const [selected, setSelected] = useState(resume_languages[0]);
+  const selected = resume_languages[0];
 
   const onOnce = () => {
     conductor?.shoot();
@@ -20,20 +21,20 @@ const Description = () => {
       <div className="flex items-stretch">
         <a
           href={selected?.link}
-          className=" border-purple-950 border-y border-l font-semibold py-2 px-4 text-center text-white rounded-l-lg hover:bg-purple-500 bg-purple-700 flex items-center"
+          className="border-purple-950 border px-4 py-2 rounded-lg text-white hover:bg-purple-950 bg-purple-700"
           target="_blank"
           rel="noreferrer"
         >
           View my Resume
         </a>
-        <form className="bg-purple-500 rounded-r-lg border-purple-950 border-y border-r hover:bg-purple-700 flex items-center">
+        {/* <form className="bg-purple-500 rounded-r-lg border-purple-950 border-y border-r hover:bg-purple-700 flex items-center">
           <CustomDropdown
             options={resume_languages}
             selected={selected}
             setSelected={setSelected}
             className="h-full"
           />
-        </form>
+        </form> */}
       </div>
     );
   }  
@@ -47,7 +48,7 @@ const Description = () => {
           <p>I aim to join a team that utilizes cutting-edge technologies to drive data solutions and contribute to impactful projects.</p>
         </section>
         <br />
-        <span className="font-semibold">
+        <span>
           📍From Lambaré,&nbsp;
           <a
             href="https://time.is/en/Paraguay"

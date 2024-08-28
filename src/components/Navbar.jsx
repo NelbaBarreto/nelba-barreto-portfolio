@@ -9,7 +9,7 @@ import {options } from "./utils";
 
 const Navbar = () => {
   const { section, setSection } = useContext(SectionContext);
-  const navbarItemClassName = "navbar-item font-semibold text-lg text-white";
+  const navbarItemClassName = "navbar-item text-lg text-white";
 
   return (
     <nav className="navbar bg-purple-500 shadow-md shadow-gray-950">
