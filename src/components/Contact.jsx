@@ -112,7 +112,7 @@ const Contact = () => {
         <div>
           <button
             type="submit"
-            className="bg-purple-700 border-purple-950 border px-4 py-2 rounded-lg text-white disabled:bg-purple-400"
+            className="bg-purple-700 border-purple-950 border px-4 py-2 rounded-lg text-white disabled:bg-purple-400 font-semibold"
             disabled={!formData.name || !formData.email || !formData.message}
           >
             Send

@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
           href={project.github}
           target="_blank"
           rel="noreferrer"
-          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-background-50 sm:w-fit -50 mt-2 shadow-gray-950 shadow-md"
+          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-background-50 sm:w-fit mt-2 shadow-gray-950 shadow-md"
         >
           <span className="text-lg mr-2">
             <FontAwesomeIcon icon={faGithub} />
