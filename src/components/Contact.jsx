@@ -10,7 +10,7 @@ const Contact = () => {
     email: "",
     message: ""
   });
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  // const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -19,16 +19,16 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted", formData);
-    setFormSubmitted(true);
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted", formData);
+  //   setFormSubmitted(true);
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     message: ""
+  //   });
+  // };
 
   return (
     <section className="bg-gray-800 border border-gray-950 rounded-lg p-10 my-5 shadow-md shadow-gray-950" id="contact">
@@ -77,7 +77,7 @@ const Contact = () => {
       </div>
 
       {formSubmitted ? <div className="border-purple-700 p-2 w-full bg-purple-100 text-purple-700 rounded-lg">Your message has been sent</div> :
-        <form onSubmit={handleSubmit} className="mt-8 space-y-6" name="contact" method="post">
+        <form className="mt-8 space-y-6" name="contact" method="post">
           <h3 className="text-lg text-white font-bold">Send me a Message! 💜</h3>
           <input type="hidden" name="form-name" value="contact" />
           <div>
