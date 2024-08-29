@@ -1,11 +1,9 @@
 import { useState } from "react";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
-// import CustomDropdown from "./CustomDropdown";
 import { resume_languages } from "../utils/index";
 
 const Description = () => {
   const [conductor, setConductor] = useState();
-  // const [selected, setSelected] = useState(resume_languages[0]);
   const selected = resume_languages[0];
 
   const onOnce = () => {
@@ -27,14 +25,6 @@ const Description = () => {
         >
           View my Resume
         </a>
-        {/* <form className="bg-purple-500 rounded-r-lg border-purple-950 border-y border-r hover:bg-purple-700 flex items-center">
-          <CustomDropdown
-            options={resume_languages}
-            selected={selected}
-            setSelected={setSelected}
-            className="h-full"
-          />
-        </form> */}
       </div>
     );
   }  
