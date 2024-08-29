@@ -10,7 +10,6 @@ const Contact = () => {
     email: "",
     message: ""
   });
-  // const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -18,17 +17,6 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log("Form submitted", formData);
-  //   setFormSubmitted(true);
-  //   setFormData({
-  //     name: "",
-  //     email: "",
-  //     message: ""
-  //   });
-  // };
 
   return (
     <section className="bg-gray-800 border border-gray-950 rounded-lg p-10 my-5 shadow-md shadow-gray-950" id="contact">
