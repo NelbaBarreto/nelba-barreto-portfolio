@@ -21,7 +21,7 @@ const Description = () => {
       <div className="flex items-stretch">
         <a
           href={selected?.link}
-          className="border-purple-950 border px-4 py-2 rounded-lg text-white hover:bg-purple-950 bg-purple-700"
+          className="border-purple-950 border px-4 py-2 rounded-lg text-white hover:bg-purple-700 bg-purple-500"
           target="_blank"
           rel="noreferrer"
         >
