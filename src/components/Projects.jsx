@@ -3,7 +3,7 @@ import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { projects } from "./utils";
+import { projects } from "../utils/utils";
 
 const ProjectCard = ({ project }) => {
   return (

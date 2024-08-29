@@ -3,7 +3,7 @@ import classNames from "classnames"
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurger } from "@fortawesome/free-solid-svg-icons";
-import { options } from "./utils";
+import { options } from "../utils/utils";
 
 const Sidebar = () => {
   const { section, setSection } = useContext(SectionContext);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
 // import CustomDropdown from "./CustomDropdown";
-import { resume_languages } from "./utils";
+import { resume_languages } from "../utils/utils";
 
 const Description = () => {
   const [conductor, setConductor] = useState();

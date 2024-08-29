@@ -12,8 +12,8 @@ export const options = [
 ]
 
 export const resume_languages = [
-  { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1RlD3KLAWJ_cEL03NZqLks7rbvwZ_SCBP/view?usp=sharing", texto: "English" },
-  { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/10heteBeY3gdv7HbdE6R-biDSCdgyb06D/view?usp=sharing", texto: "Español"  }
+  { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1CUVMWD6ANQf98Vj4evdk-sAx7glRB9wF/view?usp=sharing", texto: "English" },
+  { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/1nL-B00Vg5gQJsavHDSJwkypiK0n2wJeN/view?usp=sharing", texto: "Español"  }
 ]
 
 export const projects = [
