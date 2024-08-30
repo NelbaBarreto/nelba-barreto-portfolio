@@ -7,7 +7,7 @@ import { LanguageContext } from "../context";
 
 const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
-console.log(language)
+
   return (
     <div className="bg-gray-800 border border-gray-950 rounded-lg mt-5 p-10 shadow-md shadow-gray-950">
       <div className="font-semibold inline-flex shadow-md shadow-gray-950 rounded-lg" role="group">

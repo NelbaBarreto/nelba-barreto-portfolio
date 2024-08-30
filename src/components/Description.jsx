@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
 import { resume_languages } from "../utils/index";
+import { LanguageContext } from "../context";
+import { translations } from "../utils/translations";
 
 const Description = () => {
+  const { language } = useContext(LanguageContext);
   const [conductor, setConductor] = useState();
   const selected = resume_languages[0];
 
@@ -23,23 +26,23 @@ const Description = () => {
           target="_blank"
           rel="noreferrer"
         >
-          View my Resume
+          {translations[language].view_resume}
         </a>
       </div>
     );
-  }  
-  
+  }
+
   const Main = () => {
     return (
       <div className="mb-4">
         <section>
-          <p>I am a results-oriented professional with over five years of experience. I leverage my expertise in SQL/PLSQL and Python to enhance data quality and streamline processing times for data warehouses.</p>
-          <p>I want to transition into a data engineering role where I can work with cloud technologies. I am dedicated to continuous learning and seeking new challenges to expand my skills in modern data engineering practices.</p>
-          <p>I aim to join a team that utilizes cutting-edge technologies to drive data solutions and contribute to impactful projects.</p>
+          {translations[language].description.map((p, idx) => (
+            <p key={idx}>{p}</p>
+          ))}
         </section>
         <br />
         <span>
-          📍From Lambaré,&nbsp;
+          📍{translations[language].from} Lambaré,&nbsp;
           <a
             href="https://time.is/en/Paraguay"
             target="_blank"
@@ -57,7 +60,7 @@ const Description = () => {
   return (
     <div className="text-white">
       <h1 className="md:text-5xl text-2xl sm:text-4xl text-white font-bold my-2 lg:mb-4 lg:my-0">
-        Hello! I'm&nbsp;
+        {translations[language].greeting}&nbsp;
         <button
           className="text-purple-500"
           onClick={onOnce}
