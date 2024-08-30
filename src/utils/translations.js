@@ -1,3 +1,7 @@
+import spaceRace from "../img/space_race.jpg";
+import gallimimus from "../img/gallimimus.jpg";
+import spotify from "../img/spotify.jpg";
+
 export const translations = {
   en: {
     sections: [
@@ -17,6 +21,34 @@ export const translations = {
     from: "From",
     projects: "Projects",
     projects_main: "Although I participated in multiple projects throughout my professional career, which can be seen on my Linkedin profile and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.",
+    projects_list: [
+      {
+        id: 0,
+        name: "DinoSource",
+        description: "Descriptive analysis of dinosaur data 🦕.",
+        image: { src: gallimimus, alt: "A Gallimimus" },
+        link: "https://dinosource.onrender.com",
+        github: "https://github.com/NelbaBarreto/dinosource_dash",
+        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
+      },
+      {
+        id: 1,
+        name: "Applied Data Science Capstone",
+        description: "Final project to obtain the IBM Data Science Professional Certificate 🚀.",
+        image: { src: spaceRace, alt: "A rocket" },
+        link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
+        github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
+        tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
+      },
+      {
+        id: 2,
+        name: "Get to Know me Through Music",
+        description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
+        image: { src: spotify, alt: "Spotify App Logo" },
+        link: "https://nelbabarreto.com/spotify",
+        tags: ["azure data factory", "azure data lake"]
+      },
+    ],
     view_on_github: "View on GitHub",
     certifications_and_certificates: "Certifications & Certificates",
     contact: "Contact",
@@ -34,7 +66,7 @@ export const translations = {
       { id: 1, label: "Proyectos", href: "#projects" },
       { id: 2, label: "Certificaciones", href: "#certifications" },
       { id: 3, label: "Contacto", href: "#contact" }
-    ], 
+    ],
     view_resume: "Ver mi CV",
     resume_link: "https://drive.google.com/file/d/16DweK-aPdYpxJ7EayQyGpm7mmMzG95Fl/view?usp=sharing",
     greeting: "¡Hola! Soy",
@@ -46,6 +78,34 @@ export const translations = {
     from: "De",
     projects: "Proyectos",
     projects_main: "Aunque participé en múltiples proyectos en mi carrera profesional, que pueden ser consultados en mi perfil de Linkedin y en mi CV, los proyectos mostrados a continuación son los que desarrollé para practicar mis habilidades de Python y ciencia de datos.",
+    projects_list: [
+      {
+        id: 0,
+        name: "DinoSource",
+        description: "Análisis descriptivo de datos de dinosaurios 🦕.",
+        image: { src: gallimimus, alt: "A Gallimimus" },
+        link: "https://dinosource.onrender.com",
+        github: "https://github.com/NelbaBarreto/dinosource_dash",
+        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
+      },
+      {
+        id: 1,
+        name: "Applied Data Science Capstone",
+        description: "Proyecto final para obtener el Certificado Profesional en Ciencias de Datos de IBM 🚀.",
+        image: { src: spaceRace, alt: "A rocket" },
+        link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
+        github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
+        tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
+      },
+      {
+        id: 2,
+        name: "Conoceme a través de la Música",
+        description: "Pipeline de ingeniería de datos en Azure para analizar y visualizar mis hábitos de escucha de música utilizando datos de la API de Spotify.🎶. En construcción 🏗️.",
+        image: { src: spotify, alt: "Spotify App Logo" },
+        link: "https://nelbabarreto.com/spotify",
+        tags: ["azure data factory", "azure data lake"]
+      },
+    ],
     view_on_github: "Ver en GitHub",
     certifications_and_certificates: "Certificaciones & Certificados",
     contact: "Contacto",

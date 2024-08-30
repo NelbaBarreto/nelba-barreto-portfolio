@@ -3,7 +3,6 @@ import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { projects } from "../utils/index";
 import { LanguageContext } from "../context";
 import { translations } from "../utils/translations";
 
@@ -67,7 +66,7 @@ const Projects = () => {
         {translations[language].projects_main}
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3">
-        {projects.map((project, id) =>
+        {translations[language].projects_list.map((project, id) =>
           <ProjectCard key={id} project={project} />
         )}
       </div>
