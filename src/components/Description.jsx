@@ -1,13 +1,11 @@
 import { useState, useContext } from "react";
 import Realistic from "react-canvas-confetti/dist/presets/realistic";
-import { resume_languages } from "../utils/index";
 import { LanguageContext } from "../context";
 import { translations } from "../utils/translations";
 
 const Description = () => {
   const { language } = useContext(LanguageContext);
   const [conductor, setConductor] = useState();
-  const selected = resume_languages[0];
 
   const onOnce = () => {
     conductor?.shoot();
@@ -21,7 +19,7 @@ const Description = () => {
     return (
       <div className="flex items-stretch">
         <a
-          href={selected?.link}
+          href={translations[language].resume_link}
           className="shadow-md shadow-gray-950 px-4 py-2 rounded-lg text-white hover:bg-purple-700 bg-purple-500 font-semibold"
           target="_blank"
           rel="noreferrer"

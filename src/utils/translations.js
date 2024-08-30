@@ -30,11 +30,7 @@ export const translations = {
       { id: 1, label: "Proyectos", href: "#projects" },
       { id: 2, label: "Certificaciones", href: "#certifications" },
       { id: 3, label: "Contacto", href: "#contact" }
-    ],    
-    home: "Inicio",
-    projects: "Proyectos",
-    certifications: "Certificaciones",
-    contact: "Contacto",
+    ], 
     view_resume: "Ver mi CV",
     resume_link: "https://drive.google.com/file/d/1nL-B00Vg5gQJsavHDSJwkypiK0n2wJeN/view?usp=sharing",
     greeting: "¡Hola! Soy",
