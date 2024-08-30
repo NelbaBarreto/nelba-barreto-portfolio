@@ -8,6 +8,8 @@ import { LanguageContext } from "../context";
 import { translations } from "../utils/translations";
 
 const ProjectCard = ({ project }) => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div
       className="max-w-sm border-gray-950 border rounded-lg overflow-hidden shadow-md shadow-gray-950 w-50 my-10 m-auto"
@@ -47,7 +49,7 @@ const ProjectCard = ({ project }) => {
           <span className="text-lg mr-2">
             <FontAwesomeIcon icon={faGithub} />
           </span>
-          <span>View on GitHub</span>
+          <span>{translations[language].view_on_github}</span>
         </a> : null}
       </div>
     </div>

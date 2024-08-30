@@ -17,6 +17,7 @@ export const translations = {
     from: "From",
     projects: "Projects",
     projects_main: "Although I participated in multiple projects throughout my professional career, which can be seen on my Linkedin profile and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.",
+    view_on_github: "View on GitHub",
     certifications_and_certificates: "Certifications & Certificates",
     contact: "Contact",
     or: "or",
@@ -25,7 +26,7 @@ export const translations = {
     email: "Email",
     message: "Message",
     send: "Send",
-    developed_by: "Developer by Nelba Barreto"
+    developed_by: "Developed by Nelba Barreto"
   },
   es: {
     sections: [
@@ -45,6 +46,7 @@ export const translations = {
     from: "De",
     projects: "Proyectos",
     projects_main: "Aunque participé en múltiples proyectos en mi carrera profesional, que pueden ser consultados en mi perfil de Linkedin y en mi CV, los proyectos mostrados a continuación son los que desarrollé para practicar mis habilidades de Python y ciencia de datos.",
+    view_on_github: "Ver en GitHub",
     certifications_and_certificates: "Certificaciones & Certificados",
     contact: "Contacto",
     or: "o",
