@@ -3,10 +3,12 @@ import classNames from "classnames"
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurger } from "@fortawesome/free-solid-svg-icons";
-import { options } from "../utils/utils";
+import { LanguageContext } from "../context";
+import { translations } from "../utils/translations";
 
 const Sidebar = () => {
   const { section, setSection } = useContext(SectionContext);
+  const { language } = useContext(LanguageContext);
   const [hidden, setHidden] = useState(true);
 
   return (
@@ -20,14 +22,14 @@ const Sidebar = () => {
       <div
         className={classNames("lg:hidden mx-2 mt-2 absolute rounded-md bg-purple-500", { hidden })}
       >
-        {options.map((option, index) => {
+        {translations[language].sections.map((option, index) => {
           return (
             <a
               key={index}
               className={classNames("block border-b-background-50 text-white text-md py-2 px-4 w-36 hover:bg-purple-700 hover:font-semibold", 
               { "bg-purple-700 font-semibold": section === option.id, 
-                "border-b": option.id !== (options.length) - 1,
-                "rounded-b-md": option.id === (options.length) - 1,
+                "border-b": option.id !== (translations[language].sections.length) - 1,
+                "rounded-b-md": option.id === (translations[language].sections.length) - 1,
                 "rounded-t-lg": option.id === 0
               })}
               href={option.href}

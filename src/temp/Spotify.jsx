@@ -29,7 +29,7 @@ const Spotify = () => {
       <div className="flex justify-center space-x-4 mt-5">
         <button
           className={`border-purple-950 border px-4 py-2 rounded-lg text-white ${activeTab === "tracks"
-              ? "bg-purple-700 text-white"
+              ? "bg-purple-700"
               : "bg-[#0f172a] text-gray-300"
             }`}
           onClick={() => handleTabClick("tracks")}
@@ -38,7 +38,7 @@ const Spotify = () => {
         </button>
         <button
           className={`border-purple-950 border px-4 py-2 rounded-lg text-white ${activeTab === "artists"
-              ? "bg-purple-700 text-white"
+              ? "bg-purple-700"
               : "bg-[#0f172a] text-gray-300"
             }`}
           onClick={() => handleTabClick("artists")}

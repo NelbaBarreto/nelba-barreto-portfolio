@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { projects } from "../utils/utils";
+import { projects } from "../utils/index";
+import { LanguageContext } from "../context";
+import { translations } from "../utils/translations";
 
 const ProjectCard = ({ project }) => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div
       className="max-w-sm border-gray-950 border rounded-lg overflow-hidden shadow-md shadow-gray-950 w-50 my-10 m-auto"
@@ -40,12 +44,12 @@ const ProjectCard = ({ project }) => {
           href={project.github}
           target="_blank"
           rel="noreferrer"
-          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-background-50 sm:w-fit -50 mt-2 shadow-gray-950 shadow-md"
+          className="font-semibold py-2 px-2 text-center text-white rounded-lg bg-background-50 sm:w-fit mt-2 shadow-gray-950 shadow-md"
         >
           <span className="text-lg mr-2">
             <FontAwesomeIcon icon={faGithub} />
           </span>
-          <span>View on GitHub</span>
+          <span>{translations[language].view_on_github}</span>
         </a> : null}
       </div>
     </div>
@@ -53,12 +57,14 @@ const ProjectCard = ({ project }) => {
 }
 
 const Projects = () => {
+  const { language } = useContext(LanguageContext);
+  
   return (
     <section className="bg-gray-800 rounded-lg mt-5 p-10 border border-gray-950 shadow-md shadow-gray-950" id="projects">
-      <Title>Projects</Title>
+      <Title>{translations[language].projects}</Title>
       <br />
       <p className="text-white">
-        Although I participated in multiple projects throughout my professional career, which can be seen on my LinkedIn and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.
+        {translations[language].projects_main}
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3">
         {projects.map((project, id) =>

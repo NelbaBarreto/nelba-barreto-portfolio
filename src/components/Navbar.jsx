@@ -3,19 +3,21 @@ import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import classNames from "classnames"
+import classNames from "classnames";
 import Sidebar from "./Sidebar";
-import {options } from "../utils/utils";
+import { LanguageContext } from "../context";
+import { translations } from "../utils/translations";
 
 const Navbar = () => {
   const { section, setSection } = useContext(SectionContext);
-  const navbarItemClassName = "navbar-item text-lg text-white";
+  const { language } = useContext(LanguageContext);
+  const navbarItemClassName = "navbar-item text-lg text-white font-semibold";
 
   return (
     <nav className="navbar bg-purple-500 shadow-md shadow-gray-950">
       <div className="navbar-menu hidden">
         <div className="navbar-start">
-          {options.map((option, index) => {
+          {translations[language].sections.map((option, index) => {
             return (
               <a
                 key={index}

@@ -1,20 +1,34 @@
 import spaceRace from "../img/space_race.jpg";
 import gallimimus from "../img/gallimimus.jpg";
-import usa from "../img/icons8-usa-96.png";
-import spain from "../img/icons8-spain-96.png";
 import spotify from "../img/spotify.jpg";
+import ibmDataScience from "../img/ibm_data_science.jpg"
+import bigData from "../img/big_data.jpg";
+import oracleSQL from "../img/oracle_sql.png";
+import oracleDataScience from "../img/oracle_data_science.png";
+import azureFundamentals from "../img/azure_fundamentals.png";
 
-export const options = [
-  { id: 0, label: "Home", href: "#home" },
-  { id: 1, label: "Projects", href: "#projects" },
-  { id: 2, label: "Certifications", href: "#certifications" },
-  { id: 3, label: "Contact", href: "#contact" }
-]
+export const languages = [
+  { id: 0, label: "Español", value: "es", className: "p-2 rounded-tl-lg text-white rounded-bl-lg" },
+  { id: 1, label: "English", value: "en", className: "p-2 rounded-tr-lg text-white rounded-br-lg" }
+];
 
-export const resume_languages = [
-  { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1CUVMWD6ANQf98Vj4evdk-sAx7glRB9wF/view?usp=sharing", texto: "English" },
-  { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/1nL-B00Vg5gQJsavHDSJwkypiK0n2wJeN/view?usp=sharing", texto: "Español"  }
-]
+export const images = [
+  {
+    original: ibmDataScience
+  },
+  {
+    original: bigData
+  },
+  {
+    original: oracleSQL
+  },
+  {
+    original: oracleDataScience
+  },
+  {
+    original: azureFundamentals
+  }
+];
 
 export const projects = [
   {
