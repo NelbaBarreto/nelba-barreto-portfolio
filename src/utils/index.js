@@ -4,13 +4,6 @@ import usa from "../img/icons8-usa-96.png";
 import spain from "../img/icons8-spain-96.png";
 import spotify from "../img/spotify.jpg";
 
-export const options = [
-  { id: 0, label: "Home", href: "#home" },
-  { id: 1, label: "Projects", href: "#projects" },
-  { id: 2, label: "Certifications", href: "#certifications" },
-  { id: 3, label: "Contact", href: "#contact" }
-]
-
 export const languages = [
   { id: 0, label: "ES", value: "es", className: "p-2 rounded-tl-lg text-white rounded-bl-lg" },
   { id: 1, label: "EN", value: "en", className: "p-2 rounded-tr-lg text-white rounded-br-lg" }

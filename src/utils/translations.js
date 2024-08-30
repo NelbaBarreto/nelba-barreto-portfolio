@@ -1,15 +1,17 @@
 export const translations = {
   en: {
-    home: "Home",
-    projects: "Projects",
-    certifications: "Certifications",
-    contact: "Contact",
+    sections: [
+      { id: 0, label: "Home", href: "#home" },
+      { id: 1, label: "Projects", href: "#projects" },
+      { id: 2, label: "Certifications", href: "#certifications" },
+      { id: 3, label: "Contact", href: "#contact" }
+    ],
     view_resume: "View my Resume",
     resume_link: "https://drive.google.com/file/d/1CUVMWD6ANQf98Vj4evdk-sAx7glRB9wF/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
       "I am a results-oriented professional with over five years of experience. I leverage my expertise in SQL/PLSQL and Python to enhance data quality and streamline processing times for data warehouses.",
-      "I want to transition into a data engineering role where I can work with cloud technologies. I am dedicated to continuous learning and seeking new challenges to expand my skills in modern data engineering practices.",
+      "I want to transition into a data engineering role where I can work with cloud technologies. I am dedicated to continuous learning and seeking new challenges to improve my skills in modern data engineering practices.",
       "I aim to join a team that utilizes cutting-edge technologies to drive data solutions and contribute to impactful projects."
     ],
     from: "From",
@@ -23,6 +25,12 @@ export const translations = {
     developed_by: "Developer by Nelba Barreto"
   },
   es: {
+    sections: [
+      { id: 0, label: "Inicio", href: "#home" },
+      { id: 1, label: "Proyectos", href: "#projects" },
+      { id: 2, label: "Certificaciones", href: "#certifications" },
+      { id: 3, label: "Contacto", href: "#contact" }
+    ],    
     home: "Inicio",
     projects: "Proyectos",
     certifications: "Certificaciones",
