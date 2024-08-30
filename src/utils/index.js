@@ -11,6 +11,11 @@ export const options = [
   { id: 3, label: "Contact", href: "#contact" }
 ]
 
+export const languages = [
+  { id: 0, label: "ES", value: "es", className: "p-2 rounded-tl-lg text-white rounded-bl-lg" },
+  { id: 1, label: "EN", value: "en", className: "p-2 rounded-tr-lg text-white rounded-br-lg" }
+];
+
 export const resume_languages = [
   { id: 0, value: "EN", icon: usa, link: "https://drive.google.com/file/d/1CUVMWD6ANQf98Vj4evdk-sAx7glRB9wF/view?usp=sharing", texto: "English" },
   { id: 1, value: "ES", icon: spain, link: "https://drive.google.com/file/d/1nL-B00Vg5gQJsavHDSJwkypiK0n2wJeN/view?usp=sharing", texto: "Español"  }
