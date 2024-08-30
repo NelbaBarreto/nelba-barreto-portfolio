@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { SectionContext } from "./context.js";
+import { SectionContext, LanguageContext } from "./context.js";
 import Descripcion from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
@@ -33,6 +33,7 @@ const Main = () => {
 
 const App = () => {
   const [section, setSection] = useState(0);
+  const [language, setLanguage] = useState("es");
 
   const router = createBrowserRouter([
     {
@@ -50,13 +51,15 @@ const App = () => {
   ]);
 
   return (
-    <SectionContext.Provider value={{ section, setSection }}>
-      <div className="bg-background-50 min-h-screen">
-        <React.StrictMode>
-          <RouterProvider router={router} />
-        </React.StrictMode>
-      </div >
-    </SectionContext.Provider>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
+      <SectionContext.Provider value={{ section, setSection }}>
+        <div className="bg-background-50 min-h-screen">
+          <React.StrictMode>
+            <RouterProvider router={router} />
+          </React.StrictMode>
+        </div >
+      </SectionContext.Provider>
+    </LanguageContext.Provider>
   );
 }
 
