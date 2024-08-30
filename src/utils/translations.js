@@ -15,6 +15,7 @@ export const translations = {
       "I aim to join a team that utilizes cutting-edge technologies to drive data solutions and contribute to impactful projects."
     ],
     from: "From",
+    projects: "Projects",
     projects_main: "Although I participated in multiple projects throughout my professional career, which can be seen on my Linkedin profile and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.",
     certifications_and_certificates: "Certifications & Certificates",
     contact: "Contact",
@@ -42,6 +43,7 @@ export const translations = {
       "Mi meta es unirme a un equipo que utiliza tecnologías de vanguardia para impulsar soluciones de datos y contribuir a proyectos de gran impacto."
     ],
     from: "De",
+    projects: "Proyectos",
     projects_main: "Aunque participé en múltiples proyectos en mi carrera profesional, que pueden ser consultados en mi perfil de Linkedin y en mi CV, los proyectos mostrados a continuación son los que desarrollé para practicar mis habilidades de Python y ciencia de datos.",
     certifications_and_certificates: "Certificaciones & Certificados",
     contact: "Contacto",

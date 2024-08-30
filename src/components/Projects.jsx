@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "../utils/index";
+import { LanguageContext } from "../context";
+import { translations } from "../utils/translations";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -53,12 +55,14 @@ const ProjectCard = ({ project }) => {
 }
 
 const Projects = () => {
+  const { language } = useContext(LanguageContext);
+  
   return (
     <section className="bg-gray-800 rounded-lg mt-5 p-10 border border-gray-950 shadow-md shadow-gray-950" id="projects">
-      <Title>Projects</Title>
+      <Title>{translations[language].projects}</Title>
       <br />
       <p className="text-white">
-        Although I participated in multiple projects throughout my professional career, which can be seen on my LinkedIn and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.
+        {translations[language].projects_main}
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3">
         {projects.map((project, id) =>
