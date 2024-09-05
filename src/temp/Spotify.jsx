@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import topTracks from "./top-tracks.json";
-import topArtists from "./top-artists.json";
+import topTracks from "./topTracks.json";
+import topArtists from "./topArtists.json";
 
 const Spotify = () => {
   const [activeTab, setActiveTab] = useState("tracks");
