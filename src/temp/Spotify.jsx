@@ -20,7 +20,7 @@ const Spotify = () => {
     setActiveTab(tab);
   };
 
-  const items = activeTab === "tracks" ? topTracks.items : topArtists.items;
+  const items = activeTab === "tracks" ? topTracks?.items : topArtists?.items;
 
   return (
     <section
@@ -45,7 +45,7 @@ const Spotify = () => {
           Top Tracks
         </button>
         <button
-className={classNames("border-purple-950 border px-4 py-2 rounded-lg text-white bg-[#0f172a]", { "bg-purple-700": activeTab === "artists" })}
+          className={classNames("border-purple-950 border px-4 py-2 rounded-lg text-white bg-[#0f172a]", { "bg-purple-700": activeTab === "artists" })}
           onClick={() => handleTabClick("artists")}
         >
           Top Artists
@@ -78,7 +78,7 @@ className={classNames("border-purple-950 border px-4 py-2 rounded-lg text-white 
                 </div>}
               </div>
               {activeTab === "tracks" && (
-                <p className="text-gray-400">{item.album.name}</p>
+                <p className="text-gray-400">{item?.album?.name}</p>
               )}
             </div>
           ))}
