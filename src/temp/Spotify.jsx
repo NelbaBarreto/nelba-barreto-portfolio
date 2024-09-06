@@ -51,7 +51,7 @@ const Spotify = () => {
           Top Artists
         </button>
       </div>
-      {(isFetchingTracks || isFetchingArtists) ? null :
+      {(isFetchingTracks || isFetchingArtists) ? <span className="text-white">Loading...</span> :
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
           {items?.map((item, idx) => (
             <div key={idx} className="bg-gray-900 p-4 rounded-lg shadow-md">
