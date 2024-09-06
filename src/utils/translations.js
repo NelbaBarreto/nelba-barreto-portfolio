@@ -102,7 +102,7 @@ export const translations = {
         name: "Conoceme a través de la Música",
         description: "Pipeline de ingeniería de datos en Azure para analizar y visualizar mis hábitos de escucha de música utilizando datos de la API de Spotify.🎶. En construcción 🏗️.",
         image: { src: spotify, alt: "Spotify App Logo" },
-        link: "https://nelbabarreto.com/spotify",
+        link: `${process.env.REACT_APP_HOST}/spotify`,
         tags: ["azure data factory", "azure data lake"]
       },
     ],
