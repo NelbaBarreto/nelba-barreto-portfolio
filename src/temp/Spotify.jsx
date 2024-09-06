@@ -53,7 +53,7 @@ const Spotify = () => {
       </div>
       {(isFetchingTracks || isFetchingArtists) ? null :
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
-          {items.map((item, idx) => (
+          {items?.map((item, idx) => (
             <div key={idx} className="bg-gray-900 p-4 rounded-lg shadow-md">
               <img
                 src={
@@ -67,7 +67,7 @@ const Spotify = () => {
               <h3 className="text-white text-lg font-semibold">{item.name}</h3>
               <div className="text-white">
                 {activeTab === "tracks" ? item.artists[0].name : <div className="pt-4 pb-2">
-                  {item.genres.map((tag, idx) => {
+                  {item?.genres?.map((tag, idx) => {
                     return (
                       <span key={idx}
                         className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-md shadow-gray-950">
