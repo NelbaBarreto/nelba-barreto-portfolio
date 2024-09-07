@@ -4,7 +4,6 @@ export async function getSpotifyData(containerName, fileName) {
     const functionUrl = process.env.REACT_APP_FUNCTION_URL;
 
     const data = {
-        connection_string: process.env.REACT_APP_CONNECTION_STRING,
         container_name: containerName,
         file_name: fileName
     };
