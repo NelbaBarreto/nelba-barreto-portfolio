@@ -30,8 +30,9 @@ const Spotify = () => {
   return (
     <section className="bg-gray-800 rounded-lg m-5 p-8 border border-gray-700 shadow-lg" id="projects">
       <p className="text-white">
-        I'm still working on this project, but in the meantime, check out my top 50 Spotify tracks and artists.
-        I retrieved this data using Azure Data Factory and stored it in Azure Data Lake.
+        I'm still working on this project, but in the meantime, check out my top Spotify tracks and artists.
+        I connect to the Spotify API daily to retrieve my top 50 tracks and artists. The data is ingested into an Azure Data Lake using an automated pipeline, and I use an Azure Function to fetch the latest data from the lake.
+        The most recent information is then displayed dynamically on this page.
       </p>
       <code className="text-gray-400 block overflow-auto break-words">
         {activeTab === "tracks"
