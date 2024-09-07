@@ -28,9 +28,8 @@ const Spotify = () => {
       id="projects"
     >
       <p className="text-white">
-        I'm still working on this project, but in the meantime, check out my top
-        50 Spotify tracks and artists, which I retrieved using Azure Data
-        Factory.
+        I'm still working on this project, but in the meantime, check out my top 50 Spotify tracks and artists.
+        I retrieved this data using Azure Data Factory and stored it in Azure Data Lake.
       </p>
       <code className="text-gray-400 block overflow-auto break-words">
         {activeTab === "tracks"
