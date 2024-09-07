@@ -1,32 +1,34 @@
 import React, { useState } from "react";
-import classNames from "classnames"
-import { useQuery } from "react-query";
+import classNames from "classnames";
+import { useQueries } from "react-query";
 import { getSpotifyData } from "../api";
 
 const Spotify = () => {
   const [activeTab, setActiveTab] = useState("tracks");
 
-  const {
-    data: topTracks,
-    isFetchingTracks,
-  } = useQuery(["topTracks", "raw", "topTracks.json"], () => getSpotifyData("raw", "topTracks.json"));
+  const [topTracksQuery, topArtistsQuery] = useQueries([
+    {
+      queryKey: ["topTracks", "raw", "topTracks.json"],
+      queryFn: () => getSpotifyData("raw", "topTracks.json"),
+    },
+    {
+      queryKey: ["topArtists", "raw", "topArtists.json"],
+      queryFn: () => getSpotifyData("raw", "topArtists.json"),
+    },
+  ]);
 
-  const {
-    data: topArtists,
-    isFetchingArtists,
-  } = useQuery(["topArtists", "raw", "topArtists.json"], () => getSpotifyData("raw", "topArtists.json"));
+  const topTracks = topTracksQuery.data?.items;
+  const topArtists = topArtistsQuery.data?.items;
+  const isLoading = topTracksQuery.isLoading || topArtistsQuery.isLoading;
 
-  const handleTabClick = async (tab) => {
+  const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
 
-  const items = activeTab === "tracks" ? topTracks?.items : topArtists?.items;
+  const items = activeTab === "tracks" ? topTracks : topArtists;
 
   return (
-    <section
-      className="bg-gray-800 rounded-lg m-5 p-8 border border-gray-700 shadow-lg"
-      id="projects"
-    >
+    <section className="bg-gray-800 rounded-lg m-5 p-8 border border-gray-700 shadow-lg" id="projects">
       <p className="text-white">
         I'm still working on this project, but in the meantime, check out my top 50 Spotify tracks and artists.
         I retrieved this data using Azure Data Factory and stored it in Azure Data Lake.
@@ -50,40 +52,45 @@ const Spotify = () => {
           Top Artists
         </button>
       </div>
-      {(isFetchingTracks || isFetchingArtists || !items) ? <span className="text-white">Loading...</span> :
+
+      {isLoading ? (
+        <span className="text-white">Loading...</span>
+      ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
           {items?.map((item, idx) => (
-            <div key={idx} className="bg-gray-900 p-4 rounded-lg shadow-md">
-              <img
-                src={
-                  activeTab === "tracks"
-                    ? item.album.images[0].url
-                    : item.images[0].url
-                }
-                alt={item.name}
-                className="w-full h-auto object-cover rounded-md mb-4"
-              />
-              <h3 className="text-white text-lg font-semibold">{item.name}</h3>
-              <div className="text-white">
-                {activeTab === "tracks" ? item.artists[0].name : <div className="pt-4 pb-2">
-                  {item?.genres?.map((tag, idx) => {
-                    return (
-                      <span key={idx}
-                        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-md shadow-gray-950">
-                        {tag}
-                      </span>
-                    )
-                  })}
-                </div>}
-              </div>
-              {activeTab === "tracks" && (
-                <p className="text-gray-400">{item?.album?.name}</p>
-              )}
-            </div>
+            <ItemCard key={idx} item={item} activeTab={activeTab} />
           ))}
-        </div>}
+        </div>
+      )}
     </section>
   );
 };
+
+const ItemCard = ({ item, activeTab }) => (
+  <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+    <img
+      src={
+        activeTab === "tracks" ? item.album.images[0].url : item.images[0].url
+      }
+      alt={item.name}
+      className="w-full h-auto object-cover rounded-md mb-4"
+    />
+    <h3 className="text-white text-lg font-semibold">{item.name}</h3>
+    <div className="text-white">
+      {activeTab === "tracks" ? item.artists[0].name : (
+        <div className="pt-4 pb-2">
+          {item.genres?.map((tag, idx) => (
+            <span key={idx} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-md shadow-gray-950">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+    {activeTab === "tracks" && (
+      <p className="text-gray-400">{item?.album?.name}</p>
+    )}
+  </div>
+);
 
 export default Spotify;
