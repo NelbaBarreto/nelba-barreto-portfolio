@@ -11,7 +11,7 @@ export const translations = {
       { id: 3, label: "Contact", href: "#contact" }
     ],
     view_resume: "View my Resume",
-    resume_link: "https://drive.google.com/file/d/14GHSh5eb40HSrDX1Yr-XBe2jYdXUps7R/view?usp=drive_link",
+    resume_link: "https://drive.google.com/file/d/11_F-wenHi9rl_rB9hBpJ_IuJSkJyf2eJ/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
       "I am a results-oriented professional with over five years of experience. I leverage my expertise in SQL/PLSQL and Python to enhance data quality and streamline processing times for data warehouses.",
@@ -68,7 +68,7 @@ export const translations = {
       { id: 3, label: "Contacto", href: "#contact" }
     ],
     view_resume: "Ver mi CV",
-    resume_link: "https://drive.google.com/file/d/16DweK-aPdYpxJ7EayQyGpm7mmMzG95Fl/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1Z_LpywqGSKOEAqeseXRJf6VzOnU3gc5T/view?usp=sharing",
     greeting: "¡Hola! Soy",
     description: [
       "Soy una profesional orientada a resultados con más de cinco años de experiencia. Utilizo mis habilidades en SQL/PLSQL y Python para mejorar la calidad de los datos y optimizar los tiempos de procesamiento de los almacenes de datos.",
