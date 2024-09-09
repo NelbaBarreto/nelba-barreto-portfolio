@@ -65,7 +65,7 @@ const Projects = () => {
       <p className="text-white">
         {translations[language].projects_main}
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
         {translations[language].projects_list.map((project, id) =>
           <ProjectCard key={id} project={project} />
         )}
