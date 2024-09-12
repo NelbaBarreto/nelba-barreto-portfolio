@@ -11,7 +11,7 @@ export const translations = {
       { id: 3, label: "Contact", href: "#contact" }
     ],
     view_resume: "View my Resume",
-    resume_link: "https://drive.google.com/file/d/11_F-wenHi9rl_rB9hBpJ_IuJSkJyf2eJ/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
       "I am a computer engineer with two years of experience in full-stack web development and three years in development with SQL and PL/SQL. I worked on web systems, financial software, and business intelligence (BI) projects. In my last experience, I was part of the BI department, where I was in charge of the implementation and optimization of ETL processes, as well as the monitoring and resolution of technical problems in the flows.",
@@ -68,10 +68,10 @@ export const translations = {
       { id: 3, label: "Contacto", href: "#contact" }
     ],
     view_resume: "Ver mi CV",
-    resume_link: "https://drive.google.com/file/d/1Z_LpywqGSKOEAqeseXRJf6VzOnU3gc5T/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
     greeting: "¡Hola! Soy",
     description: [
-      "Soy una ingeniera informática con dos años de experiencia en desarrollo web full-stack y tres años en desarrollo con SQL y PL/SQL. Trabajé en proyectos de sistemas web, software financiero e inteligencia de negocios (BI). En mi última experiencia, formé parte del departamento de BI, donde estuve a cargo de la implementación y optimización de procesos ETL, así como del seguimiento y resolución de problemas técnicos en los flujos.",
+      "Soy ingeniera informática con dos años de experiencia en desarrollo web full-stack y tres años en desarrollo con SQL y PL/SQL. Trabajé en proyectos de sistemas web, software financiero e inteligencia de negocios (BI). En mi última experiencia, formé parte del departamento de BI, donde estuve a cargo de la implementación y optimización de procesos ETL, así como del seguimiento y resolución de problemas técnicos en los flujos.",
       "Estoy interesada en hacer la transición a un puesto de ingeniería de datos donde pueda aplicar mis habilidades y además, aprender prácticas modernas de ingeniería de datos.",
       "Actualmente, estoy cursando una maestría en ciencia de datos y realizando proyectos personales para mejorar mi comprensión de las herramientas de ingeniería de datos en la nube, específicamente en Azure.",
     ],
