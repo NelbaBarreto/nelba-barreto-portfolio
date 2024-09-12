@@ -32,7 +32,7 @@ const Header = () => {
       </div>
 
       <header className="py-10" id="home">
-        <div className="grid grid-cols-1 xl:grid-cols-4">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-1">
           <div className="mx-auto my-auto">
             <img src={foto} className="h-60 rounded-full" alt="foto nelba barreto" />
           </div>

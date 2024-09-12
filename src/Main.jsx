@@ -19,7 +19,7 @@ const Main = () => {
     <>
       <Navbar />
       <div className="container">
-        <div className="lg:m-0 mx-4">
+        <div className="mx-2 lg:mx-3">
           <Descripcion />
           <Projects />
           <Certifications />
