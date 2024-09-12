@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="max-w-sm border-gray-950 border rounded-lg overflow-hidden shadow-md shadow-gray-950 w-50 my-10 m-auto"
+      className="max-w-sm border-gray-950 border rounded-lg overflow-hidden shadow-md shadow-gray-950 my-10"
     >
       <img className="w-full" src={project.image?.src} alt={project.image?.alt} />
       <div className="px-6 py-4 h-full bg-purple-700">
@@ -65,7 +65,7 @@ const Projects = () => {
       <p className="text-white">
         {translations[language].projects_main}
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-0 md:gap-1 xl:gap-2">
         {translations[language].projects_list.map((project, id) =>
           <ProjectCard key={id} project={project} />
         )}

@@ -1,26 +1,22 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import iguanodon from "../img/iguanodon.jpg";
 import { LanguageContext } from "../context";
 import { translations } from "../utils/translations";
 
 const Footer = () => {
-  const navigate = useNavigate();
   const { language } = useContext(LanguageContext);
 
   return (
     <div className="my-4 mx-5">
       <hr className="h-px my-4 bg-gray-400 border-0" />
       <div className="flex items-center justify-center">
-        <span className="text-gray-400 mr-4">
+        <a
+          target="_blank"
+          href="https://github.com/NelbaBarreto/nelba-barreto-portfolio"
+          rel="noreferrer"
+          className="text-gray-400 mr-4 hover:underline"
+        >
           {translations[language].developed_by}
-        </span>
-        <img
-          onClick={() => navigate("/iguanodon")}
-          src={iguanodon}
-          className="w-10 rounded-full cursor-pointer"
-          alt="Iguanodon"
-        />
+        </a>
       </div>
       <br />
       <span className="text-white text-xs">

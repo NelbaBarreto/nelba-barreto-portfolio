@@ -1,5 +1,5 @@
 import spaceRace from "../img/space_race.jpg";
-import gallimimus from "../img/gallimimus.jpg";
+import ankylosaurus from "../img/ankylosaurus.jpg";
 import spotify from "../img/spotify.jpg";
 
 export const translations = {
@@ -11,12 +11,12 @@ export const translations = {
       { id: 3, label: "Contact", href: "#contact" }
     ],
     view_resume: "View my Resume",
-    resume_link: "https://drive.google.com/file/d/11_F-wenHi9rl_rB9hBpJ_IuJSkJyf2eJ/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
-      "I am a results-oriented professional with over five years of experience. I leverage my expertise in SQL/PLSQL and Python to enhance data quality and streamline processing times for data warehouses.",
-      "I want to transition into a data engineering role where I can work with cloud technologies. I am dedicated to continuous learning and seeking new challenges to improve my skills in modern data engineering practices.",
-      "I aim to join a team that utilizes cutting-edge technologies to drive data solutions and contribute to impactful projects."
+      "I am a computer engineer with two years of experience in full-stack web development and three years in development with SQL and PL/SQL. I worked on web systems, financial software, and business intelligence (BI) projects. In my last experience, I was part of the BI department, where I was in charge of the implementation and optimization of ETL processes, as well as the monitoring and resolution of technical problems in the flows.",
+      "I am interested in transitioning into a data engineering position where I can apply my skills and also learn modern data engineering practices.",
+      "I am working towards a master's degree in data science and doing personal projects to enhance my understanding of data engineering tools in the cloud, specifically in Azure."
     ],
     from: "From",
     projects: "Projects",
@@ -24,21 +24,21 @@ export const translations = {
     projects_list: [
       {
         id: 0,
-        name: "DinoSource",
-        description: "Descriptive analysis of dinosaur data 🦕.",
-        image: { src: gallimimus, alt: "A Gallimimus" },
-        link: "https://dinosource.onrender.com",
-        github: "https://github.com/NelbaBarreto/dinosource_dash",
-        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
-      },
-      {
-        id: 1,
         name: "Applied Data Science Capstone",
         description: "Final project to obtain the IBM Data Science Professional Certificate 🚀.",
         image: { src: spaceRace, alt: "A rocket" },
         link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
         github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
         tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
+      },
+      {
+        id: 1,
+        name: "DinoSource",
+        description: "Descriptive analysis of dinosaur data 🦕. The dataset used in this project was obtained from the website of the Natural History Museum in London.",
+        image: { src: ankylosaurus, alt: "Two ankylosaurus" },
+        link: "https://dinosource.onrender.com",
+        github: "https://github.com/NelbaBarreto/dinosource_dash",
+        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
       },
       {
         id: 2,
@@ -68,12 +68,12 @@ export const translations = {
       { id: 3, label: "Contacto", href: "#contact" }
     ],
     view_resume: "Ver mi CV",
-    resume_link: "https://drive.google.com/file/d/1Z_LpywqGSKOEAqeseXRJf6VzOnU3gc5T/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
     greeting: "¡Hola! Soy",
     description: [
-      "Soy una profesional orientada a resultados con más de cinco años de experiencia. Utilizo mis habilidades en SQL/PLSQL y Python para mejorar la calidad de los datos y optimizar los tiempos de procesamiento de los almacenes de datos.",
-      "Me gustaría hacer la transición a un puesto de ingeniería de datos donde pueda trabajar con tecnologías en la nube. Me enfoco en aprender constantemente y buscar nuevos desafíos para mejorar mis habilidades en prácticas modernas de ingeniería de datos.",
-      "Mi meta es unirme a un equipo que utiliza tecnologías de vanguardia para impulsar soluciones de datos y contribuir a proyectos de gran impacto."
+      "Soy ingeniera informática con dos años de experiencia en desarrollo web full-stack y tres años en desarrollo con SQL y PL/SQL. Trabajé en proyectos de sistemas web, software financiero e inteligencia de negocios (BI). En mi última experiencia, formé parte del departamento de BI, donde estuve a cargo de la implementación y optimización de procesos ETL, así como del seguimiento y resolución de problemas técnicos en los flujos.",
+      "Estoy interesada en hacer la transición a un puesto de ingeniería de datos donde pueda aplicar mis habilidades y además, aprender prácticas modernas de ingeniería de datos.",
+      "Actualmente, estoy cursando una maestría en ciencia de datos y realizando proyectos personales para mejorar mi comprensión de las herramientas de ingeniería de datos en la nube, específicamente en Azure.",
     ],
     from: "De",
     projects: "Proyectos",
@@ -81,21 +81,21 @@ export const translations = {
     projects_list: [
       {
         id: 0,
-        name: "DinoSource",
-        description: "Análisis descriptivo de datos de dinosaurios 🦕.",
-        image: { src: gallimimus, alt: "A Gallimimus" },
-        link: "https://dinosource.onrender.com",
-        github: "https://github.com/NelbaBarreto/dinosource_dash",
-        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
-      },
-      {
-        id: 1,
         name: "Applied Data Science Capstone",
         description: "Proyecto final para obtener el Certificado Profesional en Ciencias de Datos de IBM 🚀.",
         image: { src: spaceRace, alt: "A rocket" },
         link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
         github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
         tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
+      },
+      {
+        id: 1,
+        name: "DinoSource",
+        description: "Análisis descriptivo de datos de dinosaurios 🦕. El conjunto de datos utilizado en este proyecto fue obtenido del sitio web del Museo de Historia Natural de Londres.",
+        image: { src: ankylosaurus, alt: "Two ankylosaurus" },
+        link: "https://dinosource.onrender.com",
+        github: "https://github.com/NelbaBarreto/dinosource_dash",
+        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
       },
       {
         id: 2,
