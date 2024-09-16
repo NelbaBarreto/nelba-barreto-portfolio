@@ -40,14 +40,14 @@ export const translations = {
         github: "https://github.com/NelbaBarreto/dinosource_dash",
         tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
       },
-      // {
-      //   id: 2,
-      //   name: "Get to Know me Through Music",
-      //   description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
-      //   image: { src: spotify, alt: "Spotify App Logo" },
-      //   link: "https://nelbabarreto.com/spotify",
-      //   tags: ["azure data factory", "azure data lake"]
-      // },
+      {
+        id: 2,
+        name: "Get to Know me Through Music",
+        description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
+        image: { src: spotify, alt: "Spotify App Logo" },
+        link: "https://nelbabarreto.com/spotify",
+        tags: ["azure data factory", "azure data lake", "python"]
+      },
     ],
     view_on_github: "View on GitHub",
     certifications_and_certificates: "Certifications & Certificates",
@@ -97,14 +97,14 @@ export const translations = {
         github: "https://github.com/NelbaBarreto/dinosource_dash",
         tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
       },
-      // {
-      //   id: 2,
-      //   name: "Conoceme a través de la Música",
-      //   description: "Pipeline de ingeniería de datos en Azure para analizar y visualizar mis hábitos de escucha de música utilizando datos de la API de Spotify.🎶. En construcción 🏗️.",
-      //   image: { src: spotify, alt: "Spotify App Logo" },
-      //   link: `${process.env.REACT_APP_HOST}/spotify`,
-      //   tags: ["azure data factory", "azure data lake"]
-      // },
+      {
+        id: 2,
+        name: "Conoceme a través de la Música",
+        description: "Pipeline de ingeniería de datos en Azure para analizar y visualizar mis hábitos de escucha de música utilizando datos de la API de Spotify.🎶. En construcción 🏗️.",
+        image: { src: spotify, alt: "Spotify App Logo" },
+        link: `${process.env.REACT_APP_HOST}/spotify`,
+        tags: ["azure data factory", "azure data lake", "python"]
+      },
     ],
     view_on_github: "Ver en GitHub",
     certifications_and_certificates: "Certificaciones & Certificados",

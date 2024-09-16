@@ -7,13 +7,13 @@ const Spotify = () => {
   const [activeTab, setActiveTab] = useState("artists");
 
   const topArtistsQuery = useQuery(
-    ["topArtists", "raw", "topArtists.json"],
-    () => getSpotifyData("raw", "topArtists.json")
+    ["topArtists", "processed", "artists.json"],
+    () => getSpotifyData("processed", "artists.json")
   );
 
   const topTracksQuery = useQuery(
-    ["topTracks", "raw", "topTracks.json"],
-    () => getSpotifyData("raw", "topTracks.json"),
+    ["topTracks", "processed", "tracks.json"],
+    () => getSpotifyData("processed", "tracks.json"),
     { enabled: activeTab === "tracks" } // Solo carga los tracks si está activo
   );
 
@@ -26,6 +26,45 @@ const Spotify = () => {
   };
 
   const items = activeTab === "tracks" ? topTracks : topArtists;
+
+  const TrackCard = ({ item }) => {
+    return (
+      <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+        <img
+          src={item.image_url}
+          alt={item.track_name}
+          className="w-full h-auto object-cover rounded-md mb-4"
+        />
+        <h3 className="text-white text-lg font-semibold">{item.track_name}</h3>
+        <div className="text-white">
+          {item.artist_names.join(" | ")}
+        </div>
+        <p className="text-gray-400">{item?.album_name}</p>
+      </div>
+    )
+  };
+
+  const ArtistCard = ({ item }) => {
+    return (
+      <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+        <img
+          src={item.image_url}
+          alt={item.name}
+          className="w-full h-auto object-cover rounded-md mb-4"
+        />
+        <h3 className="text-white text-lg font-semibold">{item.name}</h3>
+        <div className="text-white">
+          <div className="pt-4 pb-2">
+            {item.genres?.map((tag, idx) => (
+              <span key={idx} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-md shadow-gray-950">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  };
 
   return (
     <section className="bg-gray-800 rounded-lg m-5 p-8 border border-gray-700 shadow-lg" id="projects">
@@ -58,40 +97,15 @@ const Spotify = () => {
         <span className="text-white">Loading...</span>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-5">
-          {items?.map((item, idx) => (
-            <ItemCard key={idx} item={item} activeTab={activeTab} />
+          {activeTab === "tracks" ? items?.map((item, idx) => (
+            <TrackCard key={idx} item={item} activeTab={activeTab} />
+          )) : items?.map((item, idx) => (
+            <ArtistCard key={idx} item={item} activeTab={activeTab} />
           ))}
         </div>
       )}
     </section>
   );
 };
-
-const ItemCard = ({ item, activeTab }) => (
-  <div className="bg-gray-900 p-4 rounded-lg shadow-md">
-    <img
-      src={
-        activeTab === "tracks" ? item.album.images[0].url : item.images[0].url
-      }
-      alt={item.name}
-      className="w-full h-auto object-cover rounded-md mb-4"
-    />
-    <h3 className="text-white text-lg font-semibold">{item.name}</h3>
-    <div className="text-white">
-      {activeTab === "tracks" ? item.artists[0].name : (
-        <div className="pt-4 pb-2">
-          {item.genres?.map((tag, idx) => (
-            <span key={idx} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-md shadow-gray-950">
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
-    {activeTab === "tracks" && (
-      <p className="text-gray-400">{item?.album?.name}</p>
-    )}
-  </div>
-);
 
 export default Spotify;
