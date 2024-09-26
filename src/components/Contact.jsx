@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { LanguageContext } from "../context";
 import { translations } from "../utils/translations";
@@ -35,17 +35,6 @@ const Contact = () => {
           >
             <FontAwesomeIcon icon={faLinkedin} size="2xl" />
             <span className="ml-2 hover:underline">Nelba Barreto</span>
-          </a>
-        </li>
-        <li className="mb-4">
-          <a
-            className="text-white"
-            href="https://github.com/NelbaBarreto/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} size="2xl" />
-            <span className="ml-2 hover:underline">NelbaBarreto</span>
           </a>
         </li>
         <li className="mb-4">

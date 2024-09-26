@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 import classNames from "classnames";
 import Sidebar from "./Sidebar";
 import { LanguageContext } from "../context";
@@ -56,11 +55,11 @@ const Navbar = () => {
               <button>
                 <a
                   className="text-white mx-2"
-                  href="mailto:barretonelba@gmail.com"
+                  href="https://learn.microsoft.com/en-us/users/nelbabarreto-6188/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+                  <FontAwesomeIcon icon={faMicrosoft} size="2xl" />
                 </a>
               </button>
             </div>
