@@ -49,7 +49,7 @@ const Description = () => {
           >
             <span>Paraguay</span>
           </a>
-          &nbsp;(GMT-4)&nbsp;&nbsp;
+          &nbsp;(GMT-3)&nbsp;&nbsp;
         </span>
       </div>
     )
