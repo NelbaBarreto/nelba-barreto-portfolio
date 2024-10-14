@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import classNames from "classnames"
-import { SectionContext } from "../context";
+import { SectionContext, LanguageContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurger } from "@fortawesome/free-solid-svg-icons";
-import { LanguageContext } from "../context";
 import { translations } from "../utils/translations";
 
 const Sidebar = () => {

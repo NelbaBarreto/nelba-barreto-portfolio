@@ -31,7 +31,7 @@ const Spotify = () => {
   const items = activeTab === "tracks" ? topTracks : topArtists;
 
   return (
-    <div id="projects">
+    <div>
       <section className="bg-gray-800 rounded-lg m-5 p-8 border border-gray-700 shadow-lg">
         <div className="text-white">
           <p>I'm actively working on this project, but for now, explore my top Spotify tracks and artists 💚.</p>

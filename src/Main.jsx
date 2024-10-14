@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Iguanodon from "./components/Iguanodon.jsx";
 import Spotify from "./temp/Spotify.jsx";
+import Faqs from "./components/faqs/Index.jsx";
 
 const Main = () => {
   return (
@@ -47,6 +48,10 @@ const App = () => {
     {
       path: "/spotify",
       element: <Spotify />
+    },
+    {
+      path: "/faqs",
+      element: <Faqs />
     }
   ]);
 

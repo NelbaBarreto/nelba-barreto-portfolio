@@ -8,7 +8,8 @@ export const translations = {
       { id: 0, label: "Home", href: "#home" },
       { id: 1, label: "Projects", href: "#projects" },
       { id: 2, label: "Certifications", href: "#certifications" },
-      { id: 3, label: "Contact", href: "#contact" }
+      { id: 3, label: "Contact", href: "#contact" },
+      { id: 4, label: "FAQs⭐", href: `${process.env.REACT_APP_HOST}/faqs` }
     ],
     view_resume: "View my Resume",
     resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
@@ -65,7 +66,8 @@ export const translations = {
       { id: 0, label: "Inicio", href: "#home" },
       { id: 1, label: "Proyectos", href: "#projects" },
       { id: 2, label: "Certificaciones", href: "#certifications" },
-      { id: 3, label: "Contacto", href: "#contact" }
+      { id: 3, label: "Contacto", href: "#contact" },
+      { id: 4, label: "FAQs⭐", href: `${process.env.REACT_APP_HOST}/faqs` }
     ],
     view_resume: "Ver mi CV",
     resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
@@ -115,6 +117,11 @@ export const translations = {
     email: "Email",
     message: "Mensaje",
     send: "Enviar",
-    developed_by: "Desarrollado por Nelba Barreto"
+    developed_by: "Desarrollado por Nelba Barreto",
+    faqs: [
+      { section_name: "Presentación", qa: [
+        { id: 0, question: "¿Podrías contarme sobre ti?", answer: "" }
+      ] }
+    ]
   },
 };
