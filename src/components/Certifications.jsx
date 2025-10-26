@@ -10,16 +10,35 @@ const Certifications = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section className="bg-gray-800 border border-gray-950 rounded-lg mt-5 p-10 shadow-md shadow-gray-950" id="certifications">
-      <Title>{translations[language].certifications_and_certificates}</Title>
-      <div
-        className="max-w-xl rounded overflow-hidden w-50 mx-auto my-10"
-      >
-        <ImageGallery
-          items={images}
-          lazyLoad={true}
-          autoPlay={true}
-        />
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl mt-8 p-8 border border-slate-700/50 shadow-2xl" id="certifications">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 via-accent-500/5 to-primary-500/5"></div>
+      <div className="absolute top-0 left-0 w-80 h-80 bg-gradient-to-br from-primary-500/10 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-tl from-accent-500/10 to-transparent rounded-full blur-3xl"></div>
+      
+      <div className="relative z-10">
+        <Title>{translations[language].certifications_and_certificates}</Title>
+        <p className="text-slate-300 text-lg leading-relaxed mb-8">
+          {language === 'es' 
+            ? "Certificaciones profesionales que validan mi experiencia y compromiso con el aprendizaje continuo en tecnología y ciencia de datos."
+            : "Professional certifications that validate my experience and commitment to continuous learning in technology and data science."
+          }
+        </p>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700/50">
+            <ImageGallery
+              items={images}
+              lazyLoad={true}
+              autoPlay={true}
+              showThumbnails={true}
+              showFullscreenButton={true}
+              showPlayButton={true}
+              showNav={true}
+              slideInterval={4000}
+              slideDuration={500}
+            />
+          </div>
+        </div>
       </div>
     </section>
   )

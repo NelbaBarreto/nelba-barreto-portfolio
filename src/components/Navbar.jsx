@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { SectionContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import classNames from "classnames";
 import Sidebar from "./Sidebar";
 import { LanguageContext } from "../context";
@@ -50,16 +50,6 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGithub} size="2xl" />
-                </a>
-              </button>
-              <button>
-                <a
-                  className="text-white mx-2"
-                  href="https://learn.microsoft.com/en-us/users/nelbabarreto-6188/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faMicrosoft} size="2xl" />
                 </a>
               </button>
             </div>

@@ -1,6 +1,6 @@
 import spaceRace from "../img/space_race.jpg";
 import ankylosaurus from "../img/ankylosaurus.jpg";
-import spotify from "../img/spotify.jpg";
+// import spotify from "../img/spotify.jpg";
 
 export const translations = {
   en: {
@@ -14,18 +14,16 @@ export const translations = {
     resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
-      "I am a computer engineer with two years of experience in full-stack web development and three years in development with SQL and PL/SQL. I worked on web systems, financial software, and business intelligence (BI) projects. In my last experience, I was part of the BI department, where I was in charge of the implementation and optimization of ETL processes, as well as the monitoring and resolution of technical problems in the flows.",
-      "I am interested in transitioning into a data engineering position where I can apply my skills and also learn modern data engineering practices.",
-      "I am working towards a master's degree in data science and doing personal projects to enhance my understanding of data engineering tools in the cloud, specifically in Azure."
+      "I'm a passionate Computer Engineer with 5+ years of experience in technology. I love solving problems and turning data into meaningful solutions.",
     ],
     from: "From",
     projects: "Projects",
-    projects_main: "Although I participated in multiple projects throughout my professional career, which can be seen on my Linkedin profile and in my resume, the projects shown below are the ones I developed to practice my Python and data science skills.",
+    projects_main: "",
     projects_list: [
       {
         id: 0,
         name: "Applied Data Science Capstone",
-        description: "Final project to obtain the IBM Data Science Professional Certificate 🚀.",
+        description: "Comprehensive data science project analyzing SpaceX launch data using machine learning algorithms to predict successful launches. Features advanced data visualization and statistical analysis 🚀.",
         image: { src: spaceRace, alt: "A rocket" },
         link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
         github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
@@ -34,20 +32,20 @@ export const translations = {
       {
         id: 1,
         name: "DinoSource",
-        description: "Descriptive analysis of dinosaur data 🦕. The dataset used in this project was obtained from the website of the Natural History Museum in London.",
+        description: "Interactive data visualization platform analyzing dinosaur fossil data from the Natural History Museum. Built with Python and Plotly, featuring dynamic charts and statistical insights 🦕.",
         image: { src: ankylosaurus, alt: "Two ankylosaurus" },
         link: "https://dinosource.onrender.com",
         github: "https://github.com/NelbaBarreto/dinosource_dash",
         tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
       },
-      {
-        id: 2,
-        name: "Get to Know me Through Music",
-        description: "Azure data engineering pipeline to analyze and visualize my music listening habits using data from the Spotify API 🎶. Under construction 🏗️.",
-        image: { src: spotify, alt: "Spotify App Logo" },
-        link: "https://nelbabarreto.com/spotify",
-        tags: ["azure data factory", "azure data lake", "python"]
-      },
+      // {
+      //   id: 2,
+      //   name: "Get to Know me Through Music",
+      //   description: "End-to-end Azure data engineering pipeline analyzing personal music listening habits using Spotify API data. Features automated ETL processes, data lake storage, and interactive dashboards 🎶.",
+      //   image: { src: spotify, alt: "Spotify App Logo" },
+      //   link: "https://nelbabarreto.com/spotify",
+      //   tags: ["azure data factory", "azure data lake", "python"]
+      // },
     ],
     view_on_github: "View on GitHub",
     certifications_and_certificates: "Certifications & Certificates",
@@ -71,18 +69,16 @@ export const translations = {
     resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
     greeting: "¡Hola! Soy",
     description: [
-      "Soy ingeniera informática con dos años de experiencia en desarrollo web full-stack y tres años en desarrollo con SQL y PL/SQL. Trabajé en proyectos de sistemas web, software financiero e inteligencia de negocios (BI). En mi última experiencia, formé parte del departamento de BI, donde estuve a cargo de la implementación y optimización de procesos ETL, así como del seguimiento y resolución de problemas técnicos en los flujos.",
-      "Estoy interesada en hacer la transición a un puesto de ingeniería de datos donde pueda aplicar mis habilidades y además, aprender prácticas modernas de ingeniería de datos.",
-      "Actualmente, estoy cursando una maestría en ciencia de datos y realizando proyectos personales para mejorar mi comprensión de las herramientas de ingeniería de datos en la nube, específicamente en Azure.",
+      "Soy Ingeniera Informática apasionada con más de 5 años de experiencia en tecnología. Me encanta resolver problemas y convertir datos en soluciones significativas.",
     ],
     from: "De",
     projects: "Proyectos",
-    projects_main: "Aunque participé en múltiples proyectos en mi carrera profesional, que pueden ser consultados en mi perfil de Linkedin y en mi CV, los proyectos mostrados a continuación son los que desarrollé para practicar mis habilidades de Python y ciencia de datos.",
+    projects_main: "",
     projects_list: [
       {
         id: 0,
         name: "Applied Data Science Capstone",
-        description: "Proyecto final para obtener el Certificado Profesional en Ciencias de Datos de IBM 🚀.",
+        description: "Proyecto integral de ciencia de datos que analiza datos de lanzamientos de SpaceX usando algoritmos de machine learning para predecir lanzamientos exitosos. Incluye visualización avanzada de datos y análisis estadístico 🚀.",
         image: { src: spaceRace, alt: "A rocket" },
         link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
         github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
@@ -91,20 +87,20 @@ export const translations = {
       {
         id: 1,
         name: "DinoSource",
-        description: "Análisis descriptivo de datos de dinosaurios 🦕. El conjunto de datos utilizado en este proyecto fue obtenido del sitio web del Museo de Historia Natural de Londres.",
+        description: "Plataforma interactiva de visualización de datos que analiza información de fósiles de dinosaurios del Museo de Historia Natural. Desarrollada con Python y Plotly, incluye gráficos dinámicos e insights estadísticos 🦕.",
         image: { src: ankylosaurus, alt: "Two ankylosaurus" },
         link: "https://dinosource.onrender.com",
         github: "https://github.com/NelbaBarreto/dinosource_dash",
         tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
       },
-      {
-        id: 2,
-        name: "Conoceme a través de la Música",
-        description: "Pipeline de ingeniería de datos en Azure para analizar y visualizar mis hábitos de escucha de música utilizando datos de la API de Spotify.🎶. En construcción 🏗️.",
-        image: { src: spotify, alt: "Spotify App Logo" },
-        link: `${process.env.REACT_APP_HOST}/spotify`,
-        tags: ["azure data factory", "azure data lake", "python"]
-      },
+      // {
+      //   id: 2,
+      //   name: "Conoceme a través de la Música",
+      //   description: "Pipeline completo de ingeniería de datos en Azure que analiza hábitos de escucha musical personal usando datos de la API de Spotify. Incluye procesos ETL automatizados, almacenamiento en data lake y dashboards interactivos 🎶.",
+      //   image: { src: spotify, alt: "Spotify App Logo" },
+      //   link: `${process.env.REACT_APP_HOST}/spotify`,
+      //   tags: ["azure data factory", "azure data lake", "python"]
+      // },
     ],
     view_on_github: "Ver en GitHub",
     certifications_and_certificates: "Certificaciones & Certificados",
