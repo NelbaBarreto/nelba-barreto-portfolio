@@ -78,7 +78,7 @@ const Contact = () => {
             {translations[language].send_message}
           </h3>
           
-          <form className="space-y-6" name="contact" method="post">
+          <form className="space-y-6" name="contact" method="post" netlify>
             <input type="hidden" name="form-name" value="contact" />
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
