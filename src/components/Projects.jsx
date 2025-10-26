@@ -59,7 +59,7 @@ const ProjectCard = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-slate-700 to-slate-600 text-white rounded-lg hover:from-slate-600 hover:to-slate-500 transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 via-violet-600 to-purple-600 text-white rounded-lg hover:from-purple-500 hover:via-violet-500 hover:to-purple-500 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:shadow-purple-500/25 z-10 relative"
           >
             <FontAwesomeIcon icon={faGithub} className="mr-2" />
             <span>{translations[language].view_on_github}</span>
