@@ -13,14 +13,14 @@ const Navbar = () => {
   const navbarItemClassName = "navbar-item text-lg text-white font-semibold";
 
   return (
-    <nav className="navbar bg-purple-500 shadow-md shadow-gray-950">
+    <nav className="navbar bg-gradient-to-r from-purple-500 via-violet-500 to-purple-600 shadow-md shadow-gray-950">
       <div className="navbar-menu hidden">
         <div className="navbar-start">
           {translations[language].sections.map((option, index) => {
             return (
               <a
                 key={index}
-                className={classNames(navbarItemClassName, { "bg-purple-700": section === option.id })}
+                className={classNames(navbarItemClassName, { "bg-gradient-to-r from-purple-600 to-violet-600": section === option.id })}
                 href={option.href}
                 onClick={() => setSection(option.id)}
               >
