@@ -126,7 +126,7 @@ const Contact = () => {
                 onChange={handleChange}
                 rows="5"
                 className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none"
-                placeholder="Cuéntame sobre tu proyecto o simplemente saluda..."
+                placeholder="..."
                 required
               ></textarea>
             </div>
