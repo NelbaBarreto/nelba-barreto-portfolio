@@ -14,7 +14,7 @@ export const translations = {
     resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
-      "I'm a passionate Computer Engineer with 5+ years of experience in technology. I love solving problems and turning data into meaningful solutions.",
+      "I'm a Computer Engineer with 6+ years of experience in technology. I love solving problems and turning data into meaningful solutions.",
     ],
     from: "From",
     projects: "Projects",
@@ -69,7 +69,7 @@ export const translations = {
     resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
     greeting: "¡Hola! Soy",
     description: [
-      "Soy Ingeniera Informática apasionada con más de 5 años de experiencia en tecnología. Me encanta resolver problemas y convertir datos en soluciones significativas.",
+      "Soy Ingeniera Informática con más de 6 años de experiencia en tecnología. Me encanta resolver problemas y convertir datos en soluciones significativas.",
     ],
     from: "De",
     projects: "Proyectos",
