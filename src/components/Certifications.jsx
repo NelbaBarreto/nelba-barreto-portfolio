@@ -20,8 +20,8 @@ const Certifications = () => {
         <Title>{translations[language].certifications_and_certificates}</Title>
         <p className="text-slate-300 text-lg leading-relaxed mb-8">
           {language === 'es' 
-            ? "Certificaciones profesionales que validan mi experiencia y compromiso con el aprendizaje continuo en tecnología y ciencia de datos."
-            : "Professional certifications that validate my experience and commitment to continuous learning in technology and data science."
+            ? "Certificaciones profesionales que validan mi experiencia y compromiso con el aprendizaje continuo en tecnología."
+            : "Professional certifications that validate my experience and commitment to continuous learning in technology."
           }
         </p>
         <div className="max-w-4xl mx-auto">
