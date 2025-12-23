@@ -3,6 +3,7 @@ import bigData from "../img/big_data.jpg";
 import oracleSQL from "../img/oracle_sql.png";
 import oracleDataScience from "../img/oracle_data_science.png";
 import azureFundamentals from "../img/azure_fundamentals.png";
+import awsCCP from "../img/aws_ccp.png";
 
 export const languages = [
   { id: 0, label: "Español", value: "es", className: "p-2 rounded-tl-lg text-white rounded-bl-lg" },
@@ -24,5 +25,8 @@ export const images = [
   },
   {
     original: azureFundamentals
+  },
+  {
+    original: awsCCP
   }
 ];
