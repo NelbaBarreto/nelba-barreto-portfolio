@@ -53,7 +53,9 @@ export const translations = {
     or: "or",
     send_message: "Send me a Message!",
     name: "Name",
+    name_placeholder: "Your name",
     email: "Email",
+    email_placeholder: "your@email.com",
     message: "Message",
     send: "Send",
     developed_by: "Developed by Nelba Barreto"
@@ -108,7 +110,9 @@ export const translations = {
     or: "o",
     send_message: "¡Enviame un Mensaje!",
     name: "Nombre",
+    name_placeholder: "Tu nombre",
     email: "Email",
+    email_placeholder: "tu@email.com",
     message: "Mensaje",
     send: "Enviar",
     developed_by: "Desarrollado por Nelba Barreto"
