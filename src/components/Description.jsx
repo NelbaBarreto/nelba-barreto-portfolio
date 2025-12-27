@@ -76,7 +76,7 @@ const Description = () => {
       </h1>
       <Realistic onInit={onInit} />
       <Main />
-      <Resume />
+      {/* <Resume /> */}
     </div>
   )
 }
