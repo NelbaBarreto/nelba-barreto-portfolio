@@ -11,7 +11,7 @@ export const translations = {
       { id: 3, label: "Contact", href: "#contact" }
     ],
     view_resume: "View my Resume",
-    resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
+    resume_link: "https://drive.google.com/file/d/1k9u7yWnBcDlnAVf0tkxOxcjdCSXs-5cx/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
       "I'm a Data Engineer with over seven years of experience in technology, with a background in software development, financial systems, ETL, and business intelligence.",
@@ -70,7 +70,7 @@ export const translations = {
       { id: 3, label: "Contacto", href: "#contact" }
     ],
     view_resume: "Ver mi CV",
-    resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
+    resume_link: "https://drive.google.com/file/d/1k9u7yWnBcDlnAVf0tkxOxcjdCSXs-5cx/view?usp=sharing",
     greeting: "¡Hola! Soy",
     description: [
       "Soy Ingeniera de Datos con más de siete años de experiencia en tecnología, con trayectoria en desarrollo de software, sistemas financieros, ETL e inteligencia de negocios.",
