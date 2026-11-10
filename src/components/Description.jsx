@@ -17,7 +17,7 @@ const Description = () => {
 
   const Resume = () => {
     return (
-      <div className="flex items-stretch mt-6">
+      <div className="flex items-stretch mt-5">
         <a
           href={translations[language].resume_link}
           className="group relative inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-xl hover:bg-primary-600 transition-colors duration-300"
@@ -35,8 +35,8 @@ const Description = () => {
 
   const Main = () => {
     return (
-      <div className="mb-6 space-y-4">
-        <section className="space-y-4">
+      <div className="space-y-4">
+        <section className="space-y-3">
           {translations[language].description.map((p, idx) => (
             <p key={idx} className="text-slate-300 leading-relaxed text-lg">{p}</p>
           ))}
@@ -64,7 +64,7 @@ const Description = () => {
 
   return (
     <div className="text-white animate-fade-in">
-      <h1 className="font-display md:text-6xl text-3xl sm:text-5xl text-white font-bold my-4 lg:mb-6 lg:my-0 leading-tight">
+      <h1 className="font-display md:text-5xl text-3xl text-white font-bold my-4 lg:my-0 lg:mb-4 leading-tight">
         <span className="text-slate-200">{translations[language].greeting} </span>
         <button
           className="text-primary-400 hover:text-primary-300 transition-colors duration-300 inline-block"
