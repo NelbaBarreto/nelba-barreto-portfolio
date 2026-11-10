@@ -22,11 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl mt-8 p-8 border border-slate-700/50 shadow-2xl" id="contact">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 via-accent-500/5 to-primary-500/5"></div>
-      <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-bl from-accent-500/10 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-primary-500/10 to-transparent rounded-full blur-3xl"></div>
+    <section className="bg-slate-900/60 rounded-2xl mt-8 p-8 border border-slate-800" id="contact">
       
       <div className="relative z-10">
         <Title>{translations[language].contact}</Title>
@@ -134,7 +130,7 @@ const Contact = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="px-8 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 disabled:from-slate-600 disabled:to-slate-700 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-primary-500/25"
+                className="px-8 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 disabled:bg-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed transition-colors duration-300"
                 disabled={!formData.name || !formData.email || !formData.message}
               >
                 {translations[language].send}

@@ -18,13 +18,11 @@ const Main = () => {
   return (
     <>
       <Navbar />
-      <div className="container">
-        <div className="mx-2 lg:mx-3">
-          <Descripcion />
-          <Projects />
-          <Certifications />
-          <Contact />
-        </div>
+      <div className="w-full px-2 sm:px-3 lg:px-4">
+        <Descripcion />
+        <Projects />
+        <Certifications />
+        <Contact />
       </div>
       <Footer />
     </>
@@ -33,7 +31,7 @@ const Main = () => {
 
 const App = () => {
   const [section, setSection] = useState(0);
-  const [language, setLanguage] = useState("es");
+  const [language, setLanguage] = useState("en");
 
   const router = createBrowserRouter([
     {

@@ -1,4 +1,5 @@
-import spaceRace from "../img/space_race.jpg";
+import { projects } from "./projects";
+// import spaceRace from "../img/space_race.jpg";
 // import ankylosaurus from "../img/ankylosaurus.jpg";
 // import spotify from "../img/spotify.jpg";
 
@@ -15,22 +16,31 @@ export const translations = {
     greeting: "Hello! I'm",
     description: [
       "I'm a Data Engineer with over seven years of experience in technology, with a background in software development, financial systems, ETL, and business intelligence.",
-      "I focus on building reliable data pipelines, ETL/ELT processes, and automated data solutions using SQL, Python, Airflow, dbt, and cloud technologies.",
-      "I'm currently completing my Master's thesis in Data Science while strengthening my AWS skills to build robust, scalable cloud-based data solutions.",
+      "I build data pipelines and ETL/ELT processes with SQL, Python, Airflow, and dbt, integrating core banking systems, operational databases, and cloud services such as Amazon S3 and Athena.",
+      "I'm currently finishing my Master's thesis in Data Science and deepening my AWS expertise with a focus on data engineering.",
     ],
     from: "From",
     projects: "Projects",
-    projects_main: "",
+    projects_main: "Selected work from my professional experience and Master's research. Work project details are kept general to respect confidentiality.",
+    project_contributions: "My role & contributions",
+    project_context: "Context",
+    project_outcome: "Outcome",
+    project_focus: "Research focus",
+    view_more_projects: "View more projects",
+    show_fewer_projects: "Show fewer projects",
+    show_details: "Show details",
+    hide_details: "Hide details",
     projects_list: [
-      {
-        id: 0,
-        name: "Applied Data Science Capstone",
-        description: "Comprehensive data science project analyzing SpaceX launch data using machine learning algorithms to predict successful launches. Features advanced data visualization and statistical analysis 🚀.",
-        image: { src: spaceRace, alt: "A rocket" },
-        link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
-        github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
-        tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
-      },
+      ...projects.en,
+      // {
+      //   id: 0,
+      //   name: "Applied Data Science Capstone",
+      //   description: "Comprehensive data science project analyzing SpaceX launch data using machine learning algorithms to predict successful launches. Features advanced data visualization and statistical analysis 🚀.",
+      //   image: { src: spaceRace, alt: "A rocket" },
+      //   link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
+      //   github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
+      //   tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
+      // },
       // {
       //   id: 1,
       //   name: "DinoSource",
@@ -50,7 +60,10 @@ export const translations = {
       // },
     ],
     view_on_github: "View on GitHub",
-    certifications_and_certificates: "Certifications & Certificates",
+    certifications: "Certifications",
+    certifications_main: "Industry certifications in cloud architecture and database technologies, plus specialized training in deep learning.",
+    view_credential: "View credential",
+    view_certificate: "View certificate",
     contact: "Contact",
     or: "or",
     send_message: "Send me a Message!",
@@ -74,22 +87,31 @@ export const translations = {
     greeting: "¡Hola! Soy",
     description: [
       "Soy Ingeniera de Datos con más de siete años de experiencia en tecnología, con trayectoria en desarrollo de software, sistemas financieros, ETL e inteligencia de negocios.",
-      "Me enfoco en el desarrollo de pipelines de datos confiables, procesos ETL/ELT y soluciones automatizadas con SQL, Python, Airflow, dbt y tecnologías cloud.",
-      "Actualmente me encuentro finalizando mi tesis de la Maestría en Ciencias de Datos, mientras fortalezco mis conocimientos en AWS para desarrollar soluciones de datos robustas y escalables en la nube.",
+      "Construyo pipelines de datos y procesos ETL/ELT con SQL, Python, Airflow y dbt, integrando sistemas core bancarios, bases de datos operativas y servicios cloud como Amazon S3 y Athena.",
+      "Actualmente me encuentro finalizando mi tesis de la Maestría en Ciencias de Datos y profundizando mis conocimientos en AWS con foco en ingeniería de datos.",
     ],
     from: "De",
     projects: "Proyectos",
-    projects_main: "",
+    projects_main: "Proyectos destacados de mi experiencia profesional y mi investigación de maestría. Los detalles de los proyectos laborales se presentan de forma general por confidencialidad.",
+    project_contributions: "Mi rol y contribuciones",
+    project_context: "Contexto",
+    project_outcome: "Resultado",
+    project_focus: "Foco de la investigación",
+    view_more_projects: "Ver más proyectos",
+    show_fewer_projects: "Ver menos proyectos",
+    show_details: "Ver detalles",
+    hide_details: "Ocultar detalles",
     projects_list: [
-      {
-        id: 0,
-        name: "Applied Data Science Capstone",
-        description: "Proyecto integral de ciencia de datos que analiza datos de lanzamientos de SpaceX usando algoritmos de machine learning para predecir lanzamientos exitosos. Incluye visualización avanzada de datos y análisis estadístico 🚀.",
-        image: { src: spaceRace, alt: "A rocket" },
-        link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
-        github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
-        tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
-      },
+      ...projects.es,
+      // {
+      //   id: 0,
+      //   name: "Applied Data Science Capstone",
+      //   description: "Proyecto integral de ciencia de datos que analiza datos de lanzamientos de SpaceX usando algoritmos de machine learning para predecir lanzamientos exitosos. Incluye visualización avanzada de datos y análisis estadístico 🚀.",
+      //   image: { src: spaceRace, alt: "A rocket" },
+      //   link: "https://drive.google.com/file/d/1Ap3ipuKYhy5U0fSyYHcU8CuGoeewVLwm/view?usp=sharing",
+      //   github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
+      //   tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
+      // },
       // {
       //   id: 1,
       //   name: "DinoSource",
@@ -109,7 +131,10 @@ export const translations = {
       // },
     ],
     view_on_github: "Ver en GitHub",
-    certifications_and_certificates: "Certificaciones & Certificados",
+    certifications: "Certificaciones",
+    certifications_main: "Certificaciones de la industria en arquitectura cloud y bases de datos, además de formación especializada en deep learning.",
+    view_credential: "Ver credencial",
+    view_certificate: "Ver certificado",
     contact: "Contacto",
     or: "o",
     send_message: "¡Enviame un Mensaje!",

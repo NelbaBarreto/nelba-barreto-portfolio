@@ -9,11 +9,7 @@ const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl mt-6 p-8 shadow-2xl border border-slate-700/50 backdrop-blur-sm">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 via-accent-500/10 to-primary-500/10 opacity-50"></div>
-      <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-br from-primary-500/20 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-accent-500/20 to-transparent rounded-full blur-3xl"></div>
+    <div className="bg-slate-900/60 rounded-2xl mt-6 p-8 border border-slate-800">
       
       <div className="relative z-10">
         {/* Language selector with improved design */}
@@ -25,7 +21,7 @@ const Header = () => {
                 className={classNames(
                   "px-4 py-2 mx-1 rounded-lg transition-all duration-300 font-medium",
                   {
-                    "bg-primary-500 text-white shadow-lg shadow-primary-500/25": language === lang.value,
+                    "bg-primary-500 text-white": language === lang.value,
                     "bg-transparent text-slate-300 hover:bg-slate-700/50 hover:text-white": language !== lang.value
                   }
                 )}
@@ -40,10 +36,9 @@ const Header = () => {
         <header className="py-12" id="home">
           <div className="grid grid-cols-1 xl:grid-cols-4 gap-8 items-center">
             <div className="mx-auto my-auto relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <img 
                 src={foto} 
-                className="relative h-64 w-64 rounded-full border-4 border-slate-600/50 shadow-2xl hover:border-primary-400/50 transition-all duration-300 hover:scale-105" 
+                className="relative h-64 w-64 rounded-full border-4 border-slate-700" 
                 alt="Profile - Nelba Barreto" 
               />
             </div>
