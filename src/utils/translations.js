@@ -1,5 +1,5 @@
 import spaceRace from "../img/space_race.jpg";
-import ankylosaurus from "../img/ankylosaurus.jpg";
+// import ankylosaurus from "../img/ankylosaurus.jpg";
 // import spotify from "../img/spotify.jpg";
 
 export const translations = {
@@ -29,15 +29,15 @@ export const translations = {
         github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
         tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
       },
-      {
-        id: 1,
-        name: "DinoSource",
-        description: "Interactive data visualization platform analyzing dinosaur fossil data from the Natural History Museum. Built with Python and Plotly, featuring dynamic charts and statistical insights 🦕.",
-        image: { src: ankylosaurus, alt: "Two ankylosaurus" },
-        link: "https://dinosource.onrender.com",
-        github: "https://github.com/NelbaBarreto/dinosource_dash",
-        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
-      },
+      // {
+      //   id: 1,
+      //   name: "DinoSource",
+      //   description: "Interactive data visualization platform analyzing dinosaur fossil data from the Natural History Museum. Built with Python and Plotly, featuring dynamic charts and statistical insights 🦕.",
+      //   image: { src: ankylosaurus, alt: "Two ankylosaurus" },
+      //   link: "https://dinosource.onrender.com",
+      //   github: "https://github.com/NelbaBarreto/dinosource_dash",
+      //   tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
+      // },
       // {
       //   id: 2,
       //   name: "Get to Know me Through Music",
@@ -86,15 +86,15 @@ export const translations = {
         github: "https://github.com/NelbaBarreto/applied-data-science-capstone",
         tags: ["python", "pandas", "plotly", "numpy", "matplotlib", "seaborn", "jupyter notebook", "sql"]
       },
-      {
-        id: 1,
-        name: "DinoSource",
-        description: "Plataforma interactiva de visualización de datos que analiza información de fósiles de dinosaurios del Museo de Historia Natural. Desarrollada con Python y Plotly, incluye gráficos dinámicos e insights estadísticos 🦕.",
-        image: { src: ankylosaurus, alt: "Two ankylosaurus" },
-        link: "https://dinosource.onrender.com",
-        github: "https://github.com/NelbaBarreto/dinosource_dash",
-        tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
-      },
+      // {
+      //   id: 1,
+      //   name: "DinoSource",
+      //   description: "Plataforma interactiva de visualización de datos que analiza información de fósiles de dinosaurios del Museo de Historia Natural. Desarrollada con Python y Plotly, incluye gráficos dinámicos e insights estadísticos 🦕.",
+      //   image: { src: ankylosaurus, alt: "Two ankylosaurus" },
+      //   link: "https://dinosource.onrender.com",
+      //   github: "https://github.com/NelbaBarreto/dinosource_dash",
+      //   tags: ["python", "pandas", "plotly", "numpy", "tailwind"]
+      // },
       // {
       //   id: 2,
       //   name: "Conoceme a través de la Música",
