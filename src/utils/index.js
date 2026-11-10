@@ -3,6 +3,7 @@ import bigData from "../img/big_data.jpg";
 import oracleSQL from "../img/oracle_sql.png";
 import azureFundamentals from "../img/azure_fundamentals.png";
 import awsCCP from "../img/aws_ccp.png";
+import awsSAA from "../img/aws_saa.png";
 import primaveraDeepLearning from "../img/primavera_deep_learning.jpg";
 
 export const languages = [
@@ -28,5 +29,8 @@ export const images = [
   },
   {
     original: awsCCP
+  },
+  {
+    original: awsSAA
   }
 ];

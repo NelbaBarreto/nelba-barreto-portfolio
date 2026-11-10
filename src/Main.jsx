@@ -39,14 +39,6 @@ const App = () => {
     {
       path: "/",
       element: <Main />,
-    },
-    {
-      path: "/iguanodon",
-      element: <Iguanodon />
-    },
-    {
-      path: "/spotify",
-      element: <Spotify />
     }
   ]);
 
