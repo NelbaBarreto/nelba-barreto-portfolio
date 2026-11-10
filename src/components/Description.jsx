@@ -20,7 +20,7 @@ const Description = () => {
       <div className="flex items-stretch mt-6">
         <a
           href={translations[language].resume_link}
-          className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-300 hover:scale-105 hover:from-primary-600 hover:to-primary-700"
+          className="group relative inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-xl hover:bg-primary-600 transition-colors duration-300"
           target="_blank"
           rel="noreferrer"
         >
@@ -67,12 +67,11 @@ const Description = () => {
       <h1 className="font-display md:text-6xl text-3xl sm:text-5xl text-white font-bold my-4 lg:mb-6 lg:my-0 leading-tight">
         <span className="text-slate-200">{translations[language].greeting} </span>
         <button
-          className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400 hover:from-primary-300 hover:to-accent-300 transition-all duration-300 hover:scale-105 inline-block"
+          className="text-primary-400 hover:text-primary-300 transition-colors duration-300 inline-block"
           onClick={onOnce}
         >
          Nelba
         </button>
-        <span className="ml-2 text-4xl animate-float">☀️</span>
       </h1>
       <Realistic onInit={onInit} />
       <Main />

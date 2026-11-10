@@ -20,14 +20,14 @@ const Sidebar = () => {
         <FontAwesomeIcon className="text-3xl text-white mx-2" icon={faBurger} />
       </button>
       <div
-        className={classNames("lg:hidden mx-2 mt-2 absolute rounded-md bg-gradient-to-r from-purple-500 via-violet-500 to-purple-600", { hidden })}
+        className={classNames("lg:hidden mx-2 mt-2 absolute rounded-md bg-slate-900 border border-slate-800", { hidden })}
       >
         {translations[language].sections.map((option, index) => {
           return (
             <a
               key={index}
-              className={classNames("block border-b-background-50 text-white text-md py-2 px-4 w-36 hover:bg-gradient-to-r hover:from-purple-600 hover:to-violet-600 hover:font-semibold", 
-              { "bg-gradient-to-r from-purple-600 to-violet-600 font-semibold": section === option.id, 
+              className={classNames("block border-b-background-50 text-white text-md py-2 px-4 w-36 hover:bg-slate-800 hover:font-semibold", 
+              { "bg-slate-800 font-semibold": section === option.id, 
                 "border-b": option.id !== (translations[language].sections.length) - 1,
                 "rounded-b-md": option.id === (translations[language].sections.length) - 1,
                 "rounded-t-lg": option.id === 0
