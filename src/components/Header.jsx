@@ -44,11 +44,8 @@ const Header = () => {
               <img 
                 src={foto} 
                 className="relative h-64 w-64 rounded-full border-4 border-slate-600/50 shadow-2xl hover:border-primary-400/50 transition-all duration-300 hover:scale-105" 
-                alt="Nelba Barreto - Ingeniera Informática" 
+                alt="Profile photo" 
               />
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-slate-800 flex items-center justify-center">
-                <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-              </div>
             </div>
             <div className="lg:col-span-3">
               <Description />
