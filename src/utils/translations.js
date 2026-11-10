@@ -14,7 +14,9 @@ export const translations = {
     resume_link: "https://drive.google.com/file/d/1P5dwtf7A_mR2kzzcIa7wWzA1DRHavVT2/view?usp=sharing",
     greeting: "Hello! I'm",
     description: [
-      "I'm a Computer Engineer with 6+ years of experience in technology. I love solving problems and turning data into meaningful solutions.",
+      "I'm a Data Engineer with over seven years of experience in technology, with a background in software development, financial systems, ETL, and business intelligence.",
+      "I focus on building reliable data pipelines, ETL/ELT processes, and automated data solutions using SQL, Python, Airflow, dbt, and cloud technologies.",
+      "I'm currently completing my Master's thesis in Data Science while strengthening my AWS skills to build robust, scalable cloud-based data solutions.",
     ],
     from: "From",
     projects: "Projects",
@@ -71,7 +73,9 @@ export const translations = {
     resume_link: "https://drive.google.com/file/d/1LnS_enDKKQB0ufNbmuY56weXEiosvQxR/view?usp=drive_link",
     greeting: "¡Hola! Soy",
     description: [
-      "Soy Ingeniera Informática con más de 6 años de experiencia en tecnología. Me encanta resolver problemas y convertir datos en soluciones significativas.",
+      "Soy Ingeniera de Datos con más de siete años de experiencia en tecnología, con trayectoria en desarrollo de software, sistemas financieros, ETL e inteligencia de negocios.",
+      "Me enfoco en el desarrollo de pipelines de datos confiables, procesos ETL/ELT y soluciones automatizadas con SQL, Python, Airflow, dbt y tecnologías cloud.",
+      "Actualmente me encuentro finalizando mi tesis de la Maestría en Ciencias de Datos, mientras fortalezco mis conocimientos en AWS para desarrollar soluciones de datos robustas y escalables en la nube.",
     ],
     from: "De",
     projects: "Proyectos",
