@@ -17,7 +17,7 @@ export const translations = {
     description: [
       "I'm a Data Engineer with over seven years of experience in technology, with a background in software development, financial systems, ETL, and business intelligence.",
       "I build data pipelines and ETL/ELT processes with SQL, Python, Airflow, and dbt, integrating core banking systems, operational databases, and cloud services such as Amazon S3 and Athena.",
-      "I'm currently finishing my Master's thesis in Data Science and deepening my AWS skills.",
+      "I'm currently finishing my Master's thesis in Data Science and deepening my AWS expertise with a focus on data engineering.",
     ],
     from: "From",
     projects: "Projects",
@@ -88,7 +88,7 @@ export const translations = {
     description: [
       "Soy Ingeniera de Datos con más de siete años de experiencia en tecnología, con trayectoria en desarrollo de software, sistemas financieros, ETL e inteligencia de negocios.",
       "Construyo pipelines de datos y procesos ETL/ELT con SQL, Python, Airflow y dbt, integrando sistemas core bancarios, bases de datos operativas y servicios cloud como Amazon S3 y Athena.",
-      "Actualmente me encuentro finalizando mi tesis de la Maestría en Ciencias de Datos y profundizando mis conocimientos en AWS.",
+      "Actualmente me encuentro finalizando mi tesis de la Maestría en Ciencias de Datos y profundizando mis conocimientos en AWS con foco en ingeniería de datos.",
     ],
     from: "De",
     projects: "Proyectos",
