@@ -1,5 +1,5 @@
 import spaceRace from "../img/space_race.jpg";
-import ankylosaurus from "../img/ankylosaurus.jpg";
+// import ankylosaurus from "../img/ankylosaurus.jpg";
 // import spotify from "../img/spotify.jpg";
 
 export const translations = {
