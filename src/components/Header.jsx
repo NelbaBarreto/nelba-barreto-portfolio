@@ -44,7 +44,7 @@ const Header = () => {
               <img 
                 src={foto} 
                 className="relative h-64 w-64 rounded-full border-4 border-slate-600/50 shadow-2xl hover:border-primary-400/50 transition-all duration-300 hover:scale-105" 
-                alt="Profile photo" 
+                alt="Profile - Nelba Barreto" 
               />
             </div>
             <div className="lg:col-span-3">
