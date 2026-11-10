@@ -11,8 +11,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Iguanodon from "./components/Iguanodon.jsx";
-import Spotify from "./temp/Spotify.jsx";
+// import Iguanodon from "./components/Iguanodon.jsx";
+// import Spotify from "./temp/Spotify.jsx";
 
 const Main = () => {
   return (
@@ -39,7 +39,15 @@ const App = () => {
     {
       path: "/",
       element: <Main />,
-    }
+    }/*,
+    {
+      path: "/iguanodon",
+      element: <Iguanodon />
+    },
+    {
+      path: "/spotify",
+      element: <Spotify />
+    }*/
   ]);
 
   return (
