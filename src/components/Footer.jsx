@@ -47,23 +47,6 @@ const Footer = () => {
             <p className="text-slate-400 text-sm">
               {translations[language].developed_by} © {new Date().getFullYear()}
             </p>
-            <p className="text-slate-500 text-xs mt-2">
-              <a 
-                target="_blank" 
-                href="https://icons8.com/icon/121371/cat" 
-                rel="noreferrer"
-                className="hover:text-slate-400 transition-colors duration-300"
-              >
-                Cat
-              </a> icon by <a 
-                target="_blank" 
-                href="https://icons8.com" 
-                rel="noreferrer"
-                className="hover:text-slate-400 transition-colors duration-300"
-              >
-                Icons8
-              </a>
-            </p>
           </div>
         </div>
       </div>
